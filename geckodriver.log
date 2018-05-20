@@ -1,0 +1,939 @@
+1526713859488	geckodriver	INFO	geckodriver 0.19.1
+1526713859499	geckodriver	INFO	Listening on 127.0.0.1:49169
+1526713859640	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.km1LAPe2hzk4"
+1526713863824	Marionette	INFO	Listening on port 43969
+1526713863860	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1526713902163	geckodriver	INFO	geckodriver 0.19.1
+1526713902167	geckodriver	INFO	Listening on 127.0.0.1:36217
+1526713902271	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.7RPGL14bF6Ja"
+
+(firefox:7136): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526713905130	Marionette	INFO	Listening on port 37699
+1526713905188	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1526713914376	geckodriver	INFO	geckodriver 0.19.1
+1526713914379	geckodriver	INFO	Listening on 127.0.0.1:48019
+1526713915507	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.sLH5YDG4cWoc"
+1526713918372	Marionette	INFO	Listening on port 39817
+1526713918427	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526713920057	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1526713943993	geckodriver	INFO	geckodriver 0.19.1
+1526713943997	geckodriver	INFO	Listening on 127.0.0.1:33337
+1526713945101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zOAZZchjSvdn"
+1526713947812	Marionette	INFO	Listening on port 41913
+1526713947941	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1526714040828	geckodriver	INFO	geckodriver 0.19.1
+1526714040832	geckodriver	INFO	Listening on 127.0.0.1:55805
+1526714040938	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vPF2BvJYuvTV"
+
+(firefox:7622): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526714043694	Marionette	INFO	Listening on port 34789
+1526714043751	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+console.warn: LoginRecipes: getRecipes: falling back to a synchronous message for: https://exchange.xforce.ibmcloud.com
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1526714231457	geckodriver	INFO	geckodriver 0.19.1
+1526714231460	geckodriver	INFO	Listening on 127.0.0.1:38679
+1526714232567	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.s58pBCK2ko89"
+1526714235360	Marionette	INFO	Listening on port 41465
+1526714235382	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 7911, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 7911, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526714285721	geckodriver	INFO	geckodriver 0.19.1
+1526714285725	geckodriver	INFO	Listening on 127.0.0.1:40317
+1526714286829	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wIrWQhAEuYVy"
+
+(firefox:8015): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526714289723	Marionette	INFO	Listening on port 40229
+1526714289745	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526714301962	geckodriver	INFO	geckodriver 0.19.1
+1526714301966	geckodriver	INFO	Listening on 127.0.0.1:41339
+1526714303102	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WYv14mzYpvES"
+1526714306293	Marionette	INFO	Listening on port 39597
+1526714306320	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:8164): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526714673911	geckodriver	INFO	geckodriver 0.19.1
+1526714673917	geckodriver	INFO	Listening on 127.0.0.1:41965
+1526714675020	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.axw66bPUHpZs"
+1526714677685	Marionette	INFO	Listening on port 33313
+1526714677734	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1526714754276	geckodriver	INFO	geckodriver 0.19.1
+1526714754284	geckodriver	INFO	Listening on 127.0.0.1:44809
+1526714755384	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.xeVwaGY0O58p"
+
+(firefox:8504): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526714758007	Marionette	INFO	Listening on port 39377
+1526714758095	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:8687): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526714930803	geckodriver	INFO	geckodriver 0.19.1
+1526714930807	geckodriver	INFO	Listening on 127.0.0.1:48851
+1526714931937	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.2pbPUPU5cwjj"
+
+(firefox:8907): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526714934706	Marionette	INFO	Listening on port 37079
+1526714934748	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:8907): LIBDBUSMENU-GLIB-WARNING **: About to Show called on an item wihtout submenus.  We're ignoring it.
+console.warn: LoginRecipes: getRecipes: falling back to a synchronous message for: https://exchange.xforce.ibmcloud.com
+console.warn: LoginRecipes: getRecipes: falling back to a synchronous message for: https://exchange.xforce.ibmcloud.com
+1526715103420	geckodriver	INFO	geckodriver 0.19.1
+1526715103423	geckodriver	INFO	Listening on 127.0.0.1:47221
+1526715104553	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.JCssMPO4XkdC"
+1526715107372	Marionette	INFO	Listening on port 36819
+1526715107497	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:9139): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526715172083	geckodriver	INFO	geckodriver 0.19.1
+1526715172086	geckodriver	INFO	Listening on 127.0.0.1:53553
+1526715173218	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.NURGKIN2ZGRN"
+1526715175931	Marionette	INFO	Listening on port 36665
+1526715176033	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.error: "Protocol error (noSuchActor): No such actor for ID: server1.conn0.child1/highlighter28"
+1526715278440	geckodriver	INFO	geckodriver 0.19.1
+1526715278444	geckodriver	INFO	Listening on 127.0.0.1:32865
+1526715279551	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.CTdYDho7Hsmd"
+1526715281808	Marionette	INFO	Listening on port 43029
+1526715281879	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526715332005	geckodriver	INFO	geckodriver 0.19.1
+1526715332009	geckodriver	INFO	Listening on 127.0.0.1:48945
+1526715333137	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.SadMStCRzsQu"
+1526715335798	Marionette	INFO	Listening on port 46593
+1526715335850	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+(firefox:9772): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526715443201	geckodriver	INFO	geckodriver 0.19.1
+1526715443204	geckodriver	INFO	Listening on 127.0.0.1:47529
+1526715444310	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.eBIi8sek64xl"
+
+(firefox:10029): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526715447089	Marionette	INFO	Listening on port 45505
+1526715447129	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526717420691	geckodriver	INFO	geckodriver 0.19.1
+1526717420700	geckodriver	INFO	Listening on 127.0.0.1:57045
+1526717421808	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ndhtKiZ91ghC"
+1526717424704	Marionette	INFO	Listening on port 37707
+1526717424721	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:11141): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526717503730	geckodriver	INFO	geckodriver 0.19.1
+1526717503735	geckodriver	INFO	Listening on 127.0.0.1:39395
+1526717504868	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.pTZAcI4tLbZx"
+
+(firefox:11336): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526717507583	Marionette	INFO	Listening on port 33121
+1526717507682	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526717608247	geckodriver	INFO	geckodriver 0.19.1
+1526717608251	geckodriver	INFO	Listening on 127.0.0.1:52075
+1526717608357	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.sKCftBJbei1d"
+1526717611131	Marionette	INFO	Listening on port 38809
+1526717611169	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:11550): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+console.warn: "Got an unexpected frameLoad in the inspector, please file a bug on bugzilla.mozilla.org!"
+console.trace: 
+resource://devtools/shared/base-loader.js -> resource://devtools/shared/fronts/inspector.js 369 WalkerFront<.getMutations</<
+resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js 928 process
+resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js 812 walkerLoop
+resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js 748 scheduleWalkerLoop/<
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526717835753	geckodriver	INFO	geckodriver 0.19.1
+1526717835759	geckodriver	INFO	Listening on 127.0.0.1:33785
+1526717836867	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.qTBpevPceKbe"
+1526717839628	Marionette	INFO	Listening on port 46213
+1526717839679	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526717880023	geckodriver	INFO	geckodriver 0.19.1
+1526717880030	geckodriver	INFO	Listening on 127.0.0.1:52331
+1526717881162	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.pvTa7Rkvir1j"
+1526717883933	Marionette	INFO	Listening on port 42829
+1526717883974	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:11887): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+(firefox:12048): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+JavaScript error: resource://gre/modules/WebNavigationFrames.jsm, line 57: TypeError: window is null
+JavaScript error: moz-extension://3687b233-94ea-4cdb-9c39-258ae76a8803/selector/ui.js, line 41: TypeError: this.sizeTracking is undefined
+console.error: "Error writing request: children"
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js, line 321: TypeError: v is undefined
+1526718068285	geckodriver	INFO	geckodriver 0.19.1
+1526718068289	geckodriver	INFO	Listening on 127.0.0.1:46227
+1526718069399	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.PpeKRMuJz1X8"
+1526718072160	Marionette	INFO	Listening on port 43741
+1526718072211	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:12301): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526718507194	geckodriver	INFO	geckodriver 0.19.1
+1526718507199	geckodriver	INFO	Listening on 127.0.0.1:51855
+1526718508333	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.SHL5twqXuflc"
+1526718511400	Marionette	INFO	Listening on port 45751
+1526718511507	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526718576113	geckodriver	INFO	geckodriver 0.19.1
+1526718576117	geckodriver	INFO	Listening on 127.0.0.1:34289
+1526718577256	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.nYEM9QI4OhpR"
+1526718580346	Marionette	INFO	Listening on port 32939
+1526718580370	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+
+(firefox:12809): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+console.error: "Protocol error (noSuchActor): No such actor for ID: server1.conn0.child1/highlighter28"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1526721229553	geckodriver	INFO	geckodriver 0.19.1
+1526721229557	geckodriver	INFO	Listening on 127.0.0.1:45633
+1526721230691	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jdFo9romktpi"
+
+(firefox:14016): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526721233652	Marionette	INFO	Listening on port 36635
+1526721233707	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526721310231	geckodriver	INFO	geckodriver 0.19.1
+1526721310235	geckodriver	INFO	Listening on 127.0.0.1:57523
+1526721311339	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.NWA55UpTrivj"
+1526721313980	Marionette	INFO	Listening on port 36451
+1526721314066	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526721427622	geckodriver	INFO	geckodriver 0.19.1
+1526721427625	geckodriver	INFO	Listening on 127.0.0.1:37205
+1526721428761	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.dubLHNpWiYQG"
+1526721431553	Marionette	INFO	Listening on port 40113
+1526721431575	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526721488084	geckodriver	INFO	geckodriver 0.19.1
+1526721488088	geckodriver	INFO	Listening on 127.0.0.1:38445
+1526721488197	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.APZ2YhKHCAMz"
+1526721491055	Marionette	INFO	Listening on port 42375
+1526721491112	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526721511613	geckodriver	INFO	geckodriver 0.19.1
+1526721511616	geckodriver	INFO	Listening on 127.0.0.1:39939
+1526721512742	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.M6TkQsTSuo4j"
+1526721515391	Marionette	INFO	Listening on port 41019
+1526721515484	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:14653): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+
+(firefox:14824): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1526721561419	geckodriver	INFO	geckodriver 0.19.1
+1526721561423	geckodriver	INFO	Listening on 127.0.0.1:47323
+1526721562529	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XZcVoOqRiGig"
+
+(firefox:15013): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526721565354	Marionette	INFO	Listening on port 42893
+1526721565442	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526723449411	geckodriver	INFO	geckodriver 0.19.1
+1526723449415	geckodriver	INFO	Listening on 127.0.0.1:46217
+1526723450559	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vibJe7ZPpCLS"
+1526723453361	Marionette	INFO	Listening on port 43369
+1526723453383	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526723521655	geckodriver	INFO	geckodriver 0.19.1
+1526723521659	geckodriver	INFO	Listening on 127.0.0.1:55737
+1526723522764	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.SZfd7bUPMkZ0"
+1526723525528	Marionette	INFO	Listening on port 40809
+1526723525575	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526723625396	geckodriver	INFO	geckodriver 0.19.1
+1526723625399	geckodriver	INFO	Listening on 127.0.0.1:51175
+1526723626500	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.3dQ6UUGbjgGY"
+
+(firefox:16227): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526723629280	Marionette	INFO	Listening on port 35873
+1526723629330	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526723824727	geckodriver	INFO	geckodriver 0.19.1
+1526723824732	geckodriver	INFO	Listening on 127.0.0.1:44009
+1526723824838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.qjg4XGXupcc0"
+1526723827814	Marionette	INFO	Listening on port 44475
+1526723827851	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:16535): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526724045551	geckodriver	INFO	geckodriver 0.19.1
+1526724045554	geckodriver	INFO	Listening on 127.0.0.1:37483
+1526724046660	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.1r0Sd6FykbJA"
+1526724049795	Marionette	INFO	Listening on port 45639
+1526724049884	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526724242146	geckodriver	INFO	geckodriver 0.19.1
+1526724242149	geckodriver	INFO	Listening on 127.0.0.1:59571
+1526724243257	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.tpniJ1p63MIu"
+1526724245967	Marionette	INFO	Listening on port 39721
+1526724246069	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:17069): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+
+(firefox:16836): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1526725638684	geckodriver	INFO	geckodriver 0.19.1
+1526725638708	geckodriver	INFO	Listening on 127.0.0.1:45879
+1526725639797	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.crpWieVJpWNZ"
+1526725643479	Marionette	INFO	Listening on port 35693
+1526725643535	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526726315775	geckodriver	INFO	geckodriver 0.19.1
+1526726315780	geckodriver	INFO	Listening on 127.0.0.1:44221
+1526726316911	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.C3PjtkLXzPdI"
+1526726319777	Marionette	INFO	Listening on port 40533
+1526726319823	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526737895515	geckodriver	INFO	geckodriver 0.19.1
+1526737895534	geckodriver	INFO	Listening on 127.0.0.1:43465
+1526737896630	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Xdqzf1U776aN"
+1526737899843	Marionette	INFO	Listening on port 40535
+1526737899948	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526737941559	geckodriver	INFO	geckodriver 0.19.1
+1526737941562	geckodriver	INFO	Listening on 127.0.0.1:53833
+1526737942665	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.pcNZOQXLtFX4"
+1526737945563	Marionette	INFO	Listening on port 35651
+1526737945582	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C00CC,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1526738272512	geckodriver	INFO	geckodriver 0.19.1
+1526738272516	geckodriver	INFO	Listening on 127.0.0.1:34773
+1526738273619	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.QFdf255QzqvP"
+1526738276356	Marionette	INFO	Listening on port 40107
+1526738276441	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526738396526	geckodriver	INFO	geckodriver 0.19.1
+1526738396531	geckodriver	INFO	Listening on 127.0.0.1:47467
+1526738397631	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.r6VYAlb7H1zM"
+1526738400502	Marionette	INFO	Listening on port 38391
+1526738400548	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1526740731040	geckodriver	INFO	geckodriver 0.19.1
+1526740731044	geckodriver	INFO	Listening on 127.0.0.1:58065
+1526740732149	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jASG7kuvuzlZ"
+1526740734884	Marionette	INFO	Listening on port 45723
+1526740734983	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1526741289031	geckodriver	INFO	geckodriver 0.19.1
+1526741289034	geckodriver	INFO	Listening on 127.0.0.1:39149
+1526741290166	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YO6XtMSrMgNk"
+1526741292972	Marionette	INFO	Listening on port 34909
+1526741292977	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526741890595	geckodriver	INFO	geckodriver 0.19.1
+1526741890599	geckodriver	INFO	Listening on 127.0.0.1:50517
+1526741891733	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.2no1RN41iISY"
+1526741894404	Marionette	INFO	Listening on port 34709
+1526741894453	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526741934783	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: timeout
+1526742017232	geckodriver	INFO	geckodriver 0.19.1
+1526742017237	geckodriver	INFO	Listening on 127.0.0.1:50607
+1526742018341	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.TpuBemFgFprm"
+1526742020982	Marionette	INFO	Listening on port 45095
+1526742021068	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526742430636	geckodriver	INFO	geckodriver 0.19.1
+1526742430639	geckodriver	INFO	Listening on 127.0.0.1:52661
+1526742431745	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5H3mdavsEvCl"
+1526742434540	Marionette	INFO	Listening on port 35759
+1526742434563	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526742508546	geckodriver	INFO	geckodriver 0.19.1
+1526742508549	geckodriver	INFO	Listening on 127.0.0.1:47875
+1526742509686	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.X2FEJIoYojvN"
+1526742512483	Marionette	INFO	Listening on port 42623
+1526742512497	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 10251, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 10251, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526742817060	geckodriver	INFO	geckodriver 0.19.1
+1526742817064	geckodriver	INFO	Listening on 127.0.0.1:56343
+1526742818180	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.EgOoUqhIjUOO"
+1526742820772	Marionette	INFO	Listening on port 44823
+1526742820794	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526742950214	geckodriver	INFO	geckodriver 0.19.1
+1526742950217	geckodriver	INFO	Listening on 127.0.0.1:54253
+1526742950319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.JO7uLvlCJB5O"
+1526742952784	Marionette	INFO	Listening on port 46087
+1526742952835	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526743368348	geckodriver	INFO	geckodriver 0.19.1
+1526743368353	geckodriver	INFO	Listening on 127.0.0.1:33779
+1526743369458	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WtSCI28Bj6WT"
+1526743372348	Marionette	INFO	Listening on port 33407
+1526743372369	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526743460219	geckodriver	INFO	geckodriver 0.19.1
+1526743460223	geckodriver	INFO	Listening on 127.0.0.1:51181
+1526743461324	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Bn7zUaoxJpvA"
+1526743464032	Marionette	INFO	Listening on port 34145
+1526743464035	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1526743521393	geckodriver	INFO	geckodriver 0.19.1
+1526743521396	geckodriver	INFO	Listening on 127.0.0.1:34127
+1526743522504	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.oQVccdFiElgs"
+1526743525328	Marionette	INFO	Listening on port 46061
+1526743525417	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 11555, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 11555, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526743906442	geckodriver	INFO	geckodriver 0.19.1
+1526743906446	geckodriver	INFO	Listening on 127.0.0.1:57521
+1526743907551	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.9dZku3XlKaSq"
+1526743910278	Marionette	INFO	Listening on port 35869
+1526743910380	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526743977983	geckodriver	INFO	geckodriver 0.19.1
+1526743977987	geckodriver	INFO	Listening on 127.0.0.1:47411
+1526743979111	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.cv9fRFN1crLq"
+1526743981919	Marionette	INFO	Listening on port 33777
+1526743981922	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1526744406388	geckodriver	INFO	geckodriver 0.19.1
+1526744406391	geckodriver	INFO	Listening on 127.0.0.1:59837
+1526744407495	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.gjiV7RCiGxv0"
+1526744410319	Marionette	INFO	Listening on port 35155
+1526744410382	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526744471651	geckodriver	INFO	geckodriver 0.19.1
+1526744471655	geckodriver	INFO	Listening on 127.0.0.1:47533
+1526744471757	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.APwm0pga00y0"
+1526744474827	Marionette	INFO	Listening on port 40533
+1526744474876	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526744873450	geckodriver	INFO	geckodriver 0.19.1
+1526744873453	geckodriver	INFO	Listening on 127.0.0.1:56613
+1526744874577	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.PDdOnKZ6G2qz"
+1526744877217	Marionette	INFO	Listening on port 38015
+1526744877288	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 12887, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526744963940	geckodriver	INFO	geckodriver 0.19.1
+1526744963944	geckodriver	INFO	Listening on 127.0.0.1:38583
+1526744965054	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.0pvYVv30B5OC"
+1526744967782	Marionette	INFO	Listening on port 44327
+1526744967899	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 13145, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 13145, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526745363920	geckodriver	INFO	geckodriver 0.19.1
+1526745363924	geckodriver	INFO	Listening on 127.0.0.1:59109
+1526745365051	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.2eh2LnLBI885"
+1526745367804	Marionette	INFO	Listening on port 43145
+1526745367893	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526745678714	geckodriver	INFO	geckodriver 0.19.1
+1526745678718	geckodriver	INFO	Listening on 127.0.0.1:60409
+1526745679822	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.lvuaIlhlsJgp"
+1526745682500	Marionette	INFO	Listening on port 40879
+1526745682537	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 13703, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C00CC,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1526745718317	geckodriver	INFO	geckodriver 0.19.1
+1526745718321	geckodriver	INFO	Listening on 127.0.0.1:33331
+1526745719425	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fQ1N2NTKZYSs"
+1526745722100	Marionette	INFO	Listening on port 42169
+1526745722138	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1526746037977	geckodriver	INFO	geckodriver 0.19.1
+1526746037980	geckodriver	INFO	Listening on 127.0.0.1:48101
+1526746039093	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.x0rrrlgiag4y"
+1526746041779	Marionette	INFO	Listening on port 32897
+1526746041811	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+[Child 14171, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 14171, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526746496884	geckodriver	INFO	geckodriver 0.19.1
+1526746496887	geckodriver	INFO	Listening on 127.0.0.1:50969
+1526746496988	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.eX23ZFtzC0G9"
+1526746499732	Marionette	INFO	Listening on port 45923
+1526746499820	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+[Child 14478, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 14478, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526747329411	geckodriver	INFO	geckodriver 0.19.1
+1526747329415	geckodriver	INFO	Listening on 127.0.0.1:48867
+1526747330517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.rvDaP6ZThVTz"
+1526747333233	Marionette	INFO	Listening on port 34421
+1526747333329	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 14878, Chrome_ChildThread] WARNING: pipe error (34): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 14878, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 14878, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526748034336	geckodriver	INFO	geckodriver 0.19.1
+1526748034339	geckodriver	INFO	Listening on 127.0.0.1:60889
+1526748035445	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.NId5NqdmEYCd"
+1526748038108	Marionette	INFO	Listening on port 36275
+1526748038161	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 15267, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 15267, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526749357004	geckodriver	INFO	geckodriver 0.19.1
+1526749357007	geckodriver	INFO	Listening on 127.0.0.1:43737
+1526749358112	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.r9eByDxIVBtv"
+1526749360827	Marionette	INFO	Listening on port 36471
+1526749360923	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+[Child 15787, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 15787, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526782254992	geckodriver	INFO	geckodriver 0.19.1
+1526782255010	geckodriver	INFO	Listening on 127.0.0.1:57403
+1526782256109	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.w1UBLXXgeKAt"
+1526782258928	Marionette	INFO	Listening on port 35385
+1526782259019	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 5101, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 5101, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526784336668	geckodriver	INFO	geckodriver 0.19.1
+1526784336672	geckodriver	INFO	Listening on 127.0.0.1:49309
+1526784337774	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.6nBJWzUx8PLe"
+1526784340484	Marionette	INFO	Listening on port 45945
+1526784340645	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1526795869665	geckodriver	INFO	geckodriver 0.19.1
+1526795869670	geckodriver	INFO	Listening on 127.0.0.1:54087
+1526795870820	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.hlcnz5Uj9xgQ"
+1526795873305	Marionette	INFO	Listening on port 46069
+1526795873330	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Parent 4897, Gecko_IOThread] WARNING: pipe error (86): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526796040028	geckodriver	INFO	geckodriver 0.19.1
+1526796040032	geckodriver	INFO	Listening on 127.0.0.1:39867
+1526796041138	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.VCU1jBBTI92R"
+1526796043794	Marionette	INFO	Listening on port 33373
+1526796043880	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 5237, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 5190, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x7C0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 5190, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x7C0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4D0007,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x7C0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x7C0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4D0007,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x7C0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x7C0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+1526796238865	geckodriver	INFO	geckodriver 0.19.1
+1526796238868	geckodriver	INFO	Listening on 127.0.0.1:33339
+1526796238968	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wzQnqcyff1XR"
+1526796241717	Marionette	INFO	Listening on port 39591
+1526796241804	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 5416, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 5416, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526804879643	geckodriver	INFO	geckodriver 0.19.1
+1526804879646	geckodriver	INFO	Listening on 127.0.0.1:44801
+1526804880754	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MGubqvjIcvdO"
+1526804883375	Marionette	INFO	Listening on port 35269
+1526804883477	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 2536, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 2536, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526805981393	geckodriver	INFO	geckodriver 0.19.1
+1526805981404	geckodriver	INFO	Listening on 127.0.0.1:54847
+1526805982576	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jqnpUY8IpYaZ"
+1526805986965	Marionette	INFO	Listening on port 39481
+1526805987000	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+ExceptionHandler::GenerateDump cloned child 5645ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1526807541213	geckodriver	INFO	geckodriver 0.19.1
+1526807541228	geckodriver	INFO	Listening on 127.0.0.1:51719
+1526807541420	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.8r9uSmFAEwdS"
+1526807546534	Marionette	INFO	Listening on port 32857
+1526807546560	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+[Child 6115, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6115, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526808407210	geckodriver	INFO	geckodriver 0.19.1
+1526808407215	geckodriver	INFO	Listening on 127.0.0.1:42283
+1526808408386	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.09BRmTZ7697A"
+1526808411229	Marionette	INFO	Listening on port 44735
+1526808411327	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 7098, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 7098, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526809326923	geckodriver	INFO	geckodriver 0.19.1
+1526809326933	geckodriver	INFO	Listening on 127.0.0.1:36051
+1526809328062	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.B4oUKWQUxpdJ"
+1526809331111	Marionette	INFO	Listening on port 33817
+1526809331175	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 8186, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 8186, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526810325449	geckodriver	INFO	geckodriver 0.19.1
+1526810325453	geckodriver	INFO	Listening on 127.0.0.1:59391
+1526810326564	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.o60lUnZrt6vW"
+1526810329346	Marionette	INFO	Listening on port 34399
+1526810329379	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
