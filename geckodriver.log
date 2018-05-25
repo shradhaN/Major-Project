@@ -937,3 +937,137 @@ JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213
 JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
 JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
 JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 9274, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 9274, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526816592069	geckodriver	INFO	geckodriver 0.19.1
+1526816592072	geckodriver	INFO	Listening on 127.0.0.1:36221
+1526816593179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jmvs6Yp6QHDB"
+1526816596151	Marionette	INFO	Listening on port 34157
+1526816596200	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.ibm.com/common/digitaladvisor/js/cm-app.min.js, line 9: TypeError: r.moduleConfiguration is undefined
+JavaScript error: https://1.www.s81c.com/common/v18/js/www.js, line 32: TypeError: z is undefined
+JavaScript error: https://www.ibm.com/common/stats/ida_production.js, line 1: Error: +++ DBDM-ERROR > ida_production.js: Another version of the DBDM library has been loaded.
+JavaScript error: https://1.www.s81c.com/common/v18/js/www.js, line 32: TypeError: z is undefined
+JavaScript error: https://1.www.s81c.com/common/v18/js/www.js, line 32: TypeError: z is undefined
+1526833004357	geckodriver	INFO	geckodriver 0.19.1
+1526833004380	geckodriver	INFO	Listening on 127.0.0.1:48571
+1526833005514	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.GHRaKxan1Eq9"
+1526833008098	Marionette	INFO	Listening on port 45973
+1526833008127	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 5204, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C00CC,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1526833233906	geckodriver	INFO	geckodriver 0.19.1
+1526833233909	geckodriver	INFO	Listening on 127.0.0.1:47021
+1526833235014	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.iTkgvVR8x6C4"
+1526833237637	Marionette	INFO	Listening on port 33767
+1526833237736	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 5422, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 5422, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526834045297	geckodriver	INFO	geckodriver 0.19.1
+1526834045301	geckodriver	INFO	Listening on 127.0.0.1:42889
+1526834046422	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.mLM18UtxMhYG"
+1526834049294	Marionette	INFO	Listening on port 42157
+1526834049338	Marionette	WARN	TLS certificate errors will be ignored for this session
+1526834135077	geckodriver	INFO	geckodriver 0.19.1
+1526834135080	geckodriver	INFO	Listening on 127.0.0.1:50805
+1526834136208	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.bWiXQsD1Ul9H"
+1526834138946	Marionette	INFO	Listening on port 37575
+1526834139019	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+[Child 6436, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 6436, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-AIw0T6/firefox-60.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1526879362688	geckodriver	INFO	geckodriver 0.19.1
+1526879362693	geckodriver	INFO	Listening on 127.0.0.1:55305
+1526879363835	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XyflPHPQFYGk"
+1526879366790	Marionette	INFO	Listening on port 45941
+1526879366854	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+1526879942067	geckodriver	INFO	geckodriver 0.19.1
+1526879942071	geckodriver	INFO	Listening on 127.0.0.1:55937
+1526879943176	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XC830qcb30k9"
+1526879945964	Marionette	INFO	Listening on port 33649
+1526879946004	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript warning: https://nebula-cdn.kampyle.com/we/28600/forms/785/1497548213717/nebula-generic.js, line 1927: unreachable code after return statement
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://use.fontawesome.com/webfontloader/1.6.24/webfontloader.js, line 11: NS_ERROR_NOT_INITIALIZED: 
+1526962422840	geckodriver	INFO	geckodriver 0.19.1
+1526962422845	geckodriver	INFO	Listening on 127.0.0.1:40773
+1526962423988	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.1SMw9RN8ozIC"
+1526962426418	Marionette	INFO	Listening on port 37615
+1526962426538	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: getRecipes: falling back to a synchronous message for: https://www.amazon.com
+console.error: "Protocol error (noSuchActor): No such actor for ID: server1.conn0.child1/highlighter29"
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:521:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:441:5
+Line: 1875, column: 0
+console.error: "Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nNetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:521:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\nonStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:441:5\nLine: 1875, column: 0"
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:651:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:608:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:702:7
+Line: 1875, column: 0
+console.error: "Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875\"  data: no]\nStack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5\nexports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14\n_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:651:5\nonStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:608:7\nonInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:702:7\nLine: 1875, column: 0"
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+

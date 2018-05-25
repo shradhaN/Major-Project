@@ -1,0 +1,588 @@
+src-ip,risk-factor,categories
+213.230.102.14,2.9,"Categorization
+Spam (29%)"
+77.41.61.206,1,"Categorization
+Dynamic IPs (71%)"
+fe80::1840:444:ce0b:f1bd,1,Categorization Unsuspicious
+79.155.130.108,1,Categorization Unsuspicious
+79.112.160.214,1,"Categorization
+Dynamic IPs (71%)"
+170.231.114.153,1,Categorization Unsuspicious
+93.159.235.48,1,Categorization Unsuspicious
+103.252.171.242,7.1,"Categorization
+Spam (71%)
+Dynamic IPs (71%)
+Bots (14%)"
+27.130.168.129,1,"Categorization
+Dynamic IPs (71%)"
+109.203.16.254,1,Categorization Unsuspicious
+71.35.123.153,1,Categorization Unsuspicious
+125.161.165.108,1,"Categorization
+Dynamic IPs (86%)"
+41.212.95.170,1,"Categorization
+Dynamic IPs (71%)"
+195.250.139.210,1,Categorization Unsuspicious
+41.205.231.109,1.4,"Categorization
+Spam (14%)
+Dynamic IPs (71%)"
+171.4.229.213,1,"Categorization
+Dynamic IPs (86%)"
+80.151.131.227,1,"Categorization
+Dynamic IPs (71%)"
+37.105.229.205,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+119.155.33.16,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+188.24.5.197,1,"Categorization
+Dynamic IPs (86%)"
+186.226.191.158,1,"Categorization
+Dynamic IPs (86%)"
+193.105.32.50,1,Categorization Unsuspicious
+103.209.143.145,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+176.71.138.65,1,"Categorization
+Dynamic IPs (71%)"
+187.20.105.125,1,Categorization Unsuspicious
+176.214.214.203,1,"Categorization
+Dynamic IPs (71%)"
+88.178.109.251,1,Categorization Unsuspicious
+170.82.211.83,1,"Categorization
+Dynamic IPs (71%)"
+177.23.63.121,1,Categorization Unsuspicious
+97.127.141.222,1,"Categorization
+Dynamic IPs (71%)"
+189.102.244.99,1,Categorization Unsuspicious
+112.208.16.238,1,"Categorization
+Dynamic IPs (71%)"
+85.132.78.66,1,"Categorization
+Dynamic IPs (71%)
+Education (edu.az)"
+185.42.60.67,1,Categorization Unsuspicious
+181.194.137.245,1,"Categorization
+Dynamic IPs (86%)"
+183.81.13.78,10,"Categorization
+Spam (100%)
+Dynamic IPs (86%)"
+99.254.140.215,1,Categorization Unsuspicious
+213.176.255.38,1,"Categorization
+Dynamic IPs (71%)"
+104.244.225.204,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+78.154.171.197,2.9,"Categorization
+Spam (29%)
+Dynamic IPs (71%)"
+46.166.142.81,1,Categorization Unsuspicious
+89.177.106.40,1,Categorization Unsuspicious
+49.144.134.213,1,"Categorization
+Dynamic IPs (86%)"
+213.172.79.153,1,"Categorization
+Dynamic IPs (71%)"
+93.140.63.130,1,Categorization Unsuspicious
+170.231.114.146,1,Categorization Unsuspicious
+177.42.81.151,1,Categorization Unsuspicious
+41.90.9.34,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+213.49.118.116,1,"Categorization
+Dynamic IPs (86%)"
+49.49.241.243,4.3,"Categorization
+Dynamic IPs (71%)
+Bots (43%)"
+37.140.58.3,1,"Categorization
+Dynamic IPs (71%)"
+94.126.61.227,1,"Categorization
+Dynamic IPs (71%)"
+62.66.191.201,1,Categorization Unsuspicious
+81.94.244.137,1,"Categorization
+Dynamic IPs (71%)"
+79.113.133.167,Unknown,Categorization Unsuspicious
+151.51.143.208,1,Categorization Unsuspicious
+190.232.248.155,1,"Categorization
+Dynamic IPs (86%)"
+191.6.126.129,1,"Categorization
+Dynamic IPs (71%)"
+171.114.138.118,1,Categorization Unsuspicious
+77.35.10.220,1,"Categorization
+Dynamic IPs (71%)"
+179.179.241.18,1,Categorization Unsuspicious
+93.185.19.114,1,"Categorization
+Dynamic IPs (86%)"
+172.98.87.94,5.7,"Categorization
+Spam (57%)"
+59.102.138.129,1,"Categorization
+Dynamic IPs (86%)"
+176.59.33.214,1,Categorization Unsuspicious
+78.188.203.27,1,Categorization Unsuspicious
+39.44.101.26,1,"Categorization
+Dynamic IPs (71%)"
+49.206.116.137,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+168.121.110.156,1,Categorization Unsuspicious
+191.35.64.75,1,"Categorization
+Dynamic IPs (71%)"
+65.92.226.65,1,"Categorization
+Dynamic IPs (86%)"
+178.234.59.169,1,Categorization Unsuspicious
+187.170.144.236,1,"Categorization
+Dynamic IPs (71%)"
+91.146.136.149,1,Categorization Unsuspicious
+37.147.139.127,1,"Categorization
+Dynamic IPs (86%)"
+83.167.29.242,1,"Categorization
+Dynamic IPs (71%)"
+185.133.224.74,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+210.8.136.47,1,Categorization Unsuspicious
+2.134.187.77,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+93.157.144.5,1.4,"Categorization
+Spam (14%)
+Dynamic IPs (71%)"
+162.237.66.14,1,"Categorization
+Dynamic IPs (71%)"
+81.174.37.241,1,"Categorization
+General Business (ramponisas.com)"
+151.16.121.251,1,Categorization Unsuspicious
+211.178.72.149,1,"Categorization
+Dynamic IPs (71%)"
+62.221.68.196,1,"Categorization
+Dynamic IPs (86%)"
+213.16.228.43,1,"Categorization
+Dynamic IPs (71%)"
+179.55.91.188,1,"Categorization
+Dynamic IPs (71%)"
+217.216.187.160,1,"Categorization
+Dynamic IPs (71%)"
+191.34.80.169,1,Categorization Unsuspicious
+94.242.181.210,1,"Categorization
+Dynamic IPs (86%)"
+115.187.34.28,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+105.108.186.3,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+80.8.200.64,1,Categorization Unsuspicious
+185.103.227.88,1,Categorization Unsuspicious
+46.166.179.39,1,Categorization Unsuspicious
+92.126.209.201,1,Categorization Unsuspicious
+188.11.59.246,1,Categorization Unsuspicious
+95.158.38.4,1,"Categorization
+Dynamic IPs (71%)"
+90.70.16.27,1,"Categorization
+Dynamic IPs (71%)"
+156.210.1.23,1,Categorization Unsuspicious
+181.44.122.82,1,"Categorization
+Dynamic IPs (86%)"
+src-ip,risk-factor,categories
+213.230.102.14,2.9,"Categorization
+Spam (29%)"
+70.72.182.64,1,Categorization Unsuspicious
+168.232.122.0,1,"Categorization
+Dynamic IPs (71%)"
+5.12.88.107,1,"Categorization
+Dynamic IPs (86%)"
+83.135.81.77,1,Categorization Unsuspicious
+39.109.185.161,1,"Categorization
+Dynamic IPs (71%)"
+145.255.9.87,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+76.84.81.196,1,"Categorization
+Dynamic IPs (71%)"
+187.109.229.55,1,Categorization Unsuspicious
+68.84.106.211,1,Categorization Unsuspicious
+195.64.208.151,5.7,"Categorization
+Spam (57%)"
+179.178.141.205,1,Categorization Unsuspicious
+221.7.7.141,1,Categorization Unsuspicious
+105.227.30.65,1,Categorization Unsuspicious
+93.125.107.76,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+188.37.197.27,1,"Categorization
+Dynamic IPs (86%)"
+90.151.82.152,5.7,"Categorization
+Scanning IPs (57%)
+Dynamic IPs (71%)"
+187.74.114.152,1,"Categorization
+Dynamic IPs (71%)"
+203.251.185.114,1,Categorization Unsuspicious
+109.62.223.124,1,"Categorization
+Dynamic IPs (86%)"
+5.172.235.142,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+2.80.251.222,1,"Categorization
+Dynamic IPs (71%)"
+87.185.99.65,1,Categorization Unsuspicious
+189.46.202.162,1,"Categorization
+Dynamic IPs (71%)"
+142.196.169.193,1,"Categorization
+Dynamic IPs (71%)"
+76.227.239.164,1,"Categorization
+Dynamic IPs (71%)"
+202.64.244.200,1,Categorization Unsuspicious
+172.90.23.234,1,"Categorization
+Dynamic IPs (71%)"
+70.45.57.86,1,"Categorization
+Dynamic IPs (86%)"
+103.252.6.145,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+101.180.233.241,1,"Categorization
+Dynamic IPs (71%)"
+185.4.43.70,1,Categorization Unsuspicious
+79.131.213.162,1,"Categorization
+Dynamic IPs (86%)"
+112.93.123.4,1,Categorization Unsuspicious
+91.32.197.52,1,Categorization Unsuspicious
+114.250.228.156,1,Categorization Unsuspicious
+106.51.107.222,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+101.176.171.79,1,Categorization Unsuspicious
+87.116.178.238,5.7,"Categorization
+Spam (57%)"
+217.131.82.117,4.3,"Categorization
+Dynamic IPs (71%)
+Bots (43%)"
+217.225.148.102,1,Categorization Unsuspicious
+82.29.47.49,1,Categorization Unsuspicious
+113.173.134.220,5.7,"Categorization
+Spam (57%)"
+197.188.186.3,1,Categorization Unsuspicious
+151.60.82.11,1,Categorization Unsuspicious
+217.6.134.66,1,Categorization Unsuspicious
+5.132.112.22,1,"Categorization
+Dynamic IPs (71%)"
+178.203.234.25,5.7,"Categorization
+Spam (57%)"
+177.37.201.7,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+71.193.129.90,1,Categorization Unsuspicious
+179.154.234.97,1,Categorization Unsuspicious
+77.28.212.90,1.4,"Categorization
+Spam (14%)
+Dynamic IPs (86%)"
+93.85.137.7,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+179.42.241.82,1,"Categorization
+Dynamic IPs (71%)"
+177.242.126.11,1,Categorization Unsuspicious
+49.34.103.46,1,Categorization Unsuspicious
+201.22.72.7,1,Categorization Unsuspicious
+178.150.193.127,1,"Categorization
+Dynamic IPs (71%)"
+191.6.127.138,1,Categorization Unsuspicious
+187.188.168.55,5.7,"Categorization
+Spam (57%)"
+77.222.117.113,1,"Categorization
+Dynamic IPs (86%)"
+179.211.88.53,1,Categorization Unsuspicious
+145.255.179.204,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+31.208.166.12,1,"Categorization
+Dynamic IPs (71%)"
+175.117.38.113,1,Categorization Unsuspicious
+src-ip,risk-factor,categories
+213.230.102.14,2.9,"Categorization
+Spam (29%)"
+178.121.21.255,1,"Categorization
+Dynamic IPs (71%)"
+77.39.5.110,1,Categorization Unsuspicious
+41.205.231.101,1.4,"Categorization
+Spam (14%)
+Dynamic IPs (71%)"
+189.82.90.100,1,"Categorization
+Dynamic IPs (86%)"
+194.176.235.59,1,"Categorization
+Dynamic IPs (71%)"
+125.231.32.238,1,"Categorization
+Dynamic IPs (86%)"
+77.42.242.234,1,Categorization Unsuspicious
+27.45.189.29,1,Categorization Unsuspicious
+86.163.190.211,1,Categorization Unsuspicious
+41.143.242.214,1,"Categorization
+Dynamic IPs (71%)"
+213.208.162.92,Unknown,Categorization Unsuspicious
+123.3.22.235,1,Categorization Unsuspicious
+195.64.208.205,5.7,"Categorization
+Spam (57%)"
+14.47.233.182,1,Categorization Unsuspicious
+14.132.105.129,1,"Categorization
+Dynamic IPs (71%)"
+69.204.117.236,1,"Categorization
+Dynamic IPs (86%)"
+187.10.159.140,1,"Categorization
+Dynamic IPs (71%)"
+170.231.114.148,1,Categorization Unsuspicious
+212.112.122.237,1,"Categorization
+Dynamic IPs (71%)"
+109.227.96.241,1,"Categorization
+Dynamic IPs (86%)"
+103.212.158.251,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+89.67.101.185,1,Categorization Unsuspicious
+159.0.134.243,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+31.202.20.90,1,Categorization Unsuspicious
+94.21.133.113,1,Categorization Unsuspicious
+31.132.175.93,1,"Categorization
+Dynamic IPs (71%)"
+182.201.41.91,1,"Categorization
+Dynamic IPs (71%)"
+84.27.116.133,1,Categorization Unsuspicious
+1.36.109.43,1,Categorization Unsuspicious
+86.121.18.7,1,"Categorization
+Dynamic IPs (71%)"
+124.32.130.198,1,Categorization Unsuspicious
+88.163.85.252,1,Categorization Unsuspicious
+104.163.155.69,1,"Categorization
+Dynamic IPs (86%)"
+81.131.97.103,1,Categorization Unsuspicious
+83.24.134.179,1,"Categorization
+Dynamic IPs (71%)"
+46.32.66.131,1,"Categorization
+Dynamic IPs (71%)"
+src-ip,risk-factor,categories
+213.230.102.14,2.9,"Categorization
+Spam (29%)"
+95.55.252.121,1,"Categorization
+Dynamic IPs (71%)"
+67.193.68.31,1,"Categorization
+Dynamic IPs (86%)"
+5.76.122.3,1,"Categorization
+Dynamic IPs (86%)"
+87.211.170.50,1,Categorization Unsuspicious
+47.11.187.145,1,Categorization Unsuspicious
+200.83.20.21,1,"Categorization
+Dynamic IPs (71%)"
+197.157.253.76,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+2001:0:4137:9e76:1840:444:ce0b:f1bd,1,Categorization Unsuspicious
+2001:0:9d38:78cf:479:1966:4ee8:c086,1,Categorization Unsuspicious
+2001:0:9d38:78cf:2b:472:44f5:6073,1,Categorization Unsuspicious
+2001:0:9d38:78cf:34a2:3479:4c4d:7232,1,Categorization Unsuspicious
+2001:0:9d38:6abd:148d:57d:56fe:7270,1,Categorization Unsuspicious
+89.215.253.244,1,Categorization Unsuspicious
+109.172.159.46,1,Categorization Unsuspicious
+2001:0:5ef5:79fb:146d:aaa:9c01:7328,1,Categorization Unsuspicious
+46.180.7.137,1,"Categorization
+Dynamic IPs (71%)"
+78.55.202.9,1,Categorization Unsuspicious
+83.171.113.254,1,"Categorization
+Dynamic IPs (71%)"
+203.163.241.95,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+87.205.8.124,1,Categorization Unsuspicious
+2001:0:5ef5:79fd:2c19:29c8:4371:293c,1,Categorization Unsuspicious
+2001:0:9d38:90d7:1834:2a6:9805:d2ba,1,Categorization Unsuspicious
+2001:0:5ef5:79fd:30b3:9444:3793:39a6,1,Categorization Unsuspicious
+2001:0:9d38:953c:300c:288e:a72b:dbe4,1,Categorization Unsuspicious
+2001:0:9d38:90d7:ca6:22e4:d8d3:9ae5,1,Categorization Unsuspicious
+2001:0:9d38:6abd:30fa:885:9082:ab1d,1,Categorization Unsuspicious
+78.97.212.252,1,"Categorization
+Dynamic IPs (71%)"
+2001:0:9d38:6abd:2894:2aa4:3a0a:59ff,1,Categorization Unsuspicious
+89.19.178.138,1,Categorization Unsuspicious
+2001:0:4137:9e76:457:1649:8864:f12a,1,Categorization Unsuspicious
+105.98.228.15,1,"Categorization
+Dynamic IPs (86%)"
+58.179.149.17,1,Categorization Unsuspicious
+189.69.67.207,1,"Categorization
+Dynamic IPs (71%)"
+39.43.231.72,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+188.123.245.27,1,Categorization Unsuspicious
+80.112.114.224,1,"Categorization
+Dynamic IPs (71%)"
+168.194.50.50,1,"Categorization
+Dynamic IPs (86%)"
+72.234.199.85,1,Categorization Unsuspicious
+91.66.239.238,1,Categorization Unsuspicious
+27.34.104.232,1,"Categorization
+Dynamic IPs (86%)"
+173.210.183.175,1,"Categorization
+Dynamic IPs (71%)"
+142.166.156.203,1,"Categorization
+Dynamic IPs (71%)"
+119.153.130.10,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+81.102.219.223,Unknown,Categorization Unsuspicious
+51.223.32.192,Unknown,Categorization Unsuspicious
+src-ip,risk-factor,categories
+213.230.102.14,2.9,"Categorization
+Spam (29%)"
+79.1.129.90,1,Categorization Unsuspicious
+2001:0:9d38:90d7:1c2b:35:98b4:5f8a,1,Categorization Unsuspicious
+70.181.105.190,1,"Categorization
+Dynamic IPs (71%)"
+80.15.151.233,1,Categorization Unsuspicious
+80.147.227.55,1,Categorization Unsuspicious
+179.179.198.202,1,Categorization Unsuspicious
+2001:0:9d38:953c:89:1ca:2176:983e,1,Categorization Unsuspicious
+189.26.106.41,1,Categorization Unsuspicious
+105.226.99.115,1,"Categorization
+Dynamic IPs (86%)"
+187.58.6.119,1,Categorization Unsuspicious
+221.189.251.178,1,Categorization Unsuspicious
+93.76.126.197,1,"Categorization
+Dynamic IPs (71%)"
+79.7.107.8,1,Categorization Unsuspicious
+178.60.137.239,1,"Categorization
+Dynamic IPs (71%)"
+79.113.191.34,1,Categorization Unsuspicious
+2001:0:9d38:953c:e5:1e58:4dc3:7610,1,Categorization Unsuspicious
+109.64.11.59,1,"Categorization
+Dynamic IPs (86%)"
+213.215.67.75,1,Categorization Unsuspicious
+89.36.14.66,1,"Categorization
+Dynamic IPs (86%)"
+69.202.248.210,1,"Categorization
+Dynamic IPs (71%)"
+93.155.164.4,1,"Categorization
+Dynamic IPs (71%)"
+188.167.250.245,1,"Categorization
+Dynamic IPs (86%)"
+36.149.172.143,1,Categorization Unsuspicious
+181.113.158.14,1,Categorization Unsuspicious
+36.149.23.43,1,"Categorization
+Dynamic IPs (71%)"
+51.235.199.12,1,"Categorization
+Dynamic IPs (86%)"
+119.94.81.80,1,Categorization Unsuspicious
+60.49.56.136,1,"Categorization
+Dynamic IPs (71%)"
+66.65.49.254,1,"Categorization
+Dynamic IPs (86%)"
+169.0.163.194,1,"Categorization
+Dynamic IPs (71%)"
+185.79.1.230,2.9,"Categorization
+Spam (29%)
+Dynamic IPs (71%)"
+179.110.105.37,Unknown,Categorization Unsuspicious
+36.149.128.217,1,"Categorization
+Dynamic IPs (71%)"
+2.27.68.2,1,Categorization Unsuspicious
+36.149.82.75,1,"Categorization
+Dynamic IPs (71%)"
+2001:0:5ef5:79fb:2c88:33a6:573d:cdcd,1,Categorization Unsuspicious
+36.149.145.129,1,"Categorization
+Dynamic IPs (71%)"
+45.27.129.216,1,"Categorization
+Dynamic IPs (71%)"
+91.146.46.194,1,Categorization Unsuspicious
+138.186.110.252,1,"Categorization
+Dynamic IPs (71%)"
+124.146.100.150,1,"Categorization
+Dynamic IPs (71%)"
+107.23.130.6,1,Categorization Unsuspicious
+165.228.221.168,1,Categorization Unsuspicious
+119.247.129.40,1,Categorization Unsuspicious
+190.196.93.82,1,Categorization Unsuspicious
+93.180.7.76,1,Categorization Unsuspicious
+87.190.252.146,1,Categorization Unsuspicious
+90.188.172.64,1,"Categorization
+Dynamic IPs (71%)"
+93.74.51.227,1,Categorization Unsuspicious
+176.175.5.107,1,Categorization Unsuspicious
+188.60.58.241,1,"Categorization
+Dynamic IPs (71%)"
+2001:0:9d38:78cf:187c:3d54:4c91:96da,1,Categorization Unsuspicious
+86.125.235.200,1,"Categorization
+Dynamic IPs (71%)"
+177.75.131.178,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+81.128.247.250,1,Categorization Unsuspicious
+src-ip,risk-factor,categories
+213.230.102.14,2.9,"Categorization
+Spam (29%)"
+213.238.228.43,1,"Categorization
+Dynamic IPs (71%)"
+85.58.143.141,1,"Categorization
+Dynamic IPs (71%)"
+213.138.92.12,1,"Categorization
+Dynamic IPs (86%)"
+114.47.137.215,1,"Categorization
+Dynamic IPs (71%)"
+68.98.26.133,1,"Categorization
+Dynamic IPs (71%)"
+1.11.62.194,1,"Categorization
+Dynamic IPs (71%)"
+78.96.81.88,1.4,"Categorization
+Spam (14%)"
+77.177.14.187,1,"Categorization
+Dynamic IPs (71%)"
+35.195.14.76,1,Categorization Unsuspicious
+2001:0:9d38:90d7:34fe:1400:549e:e4e9,1,Categorization Unsuspicious
+59.115.188.50,1,"Categorization
+Dynamic IPs (71%)"
+95.58.148.210,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (71%)"
+185.49.243.38,1,Categorization Unsuspicious
+179.178.8.149,1,Categorization Unsuspicious
+79.62.76.238,1,Categorization Unsuspicious
+178.90.83.37,1,"Categorization
+Dynamic IPs (86%)"
+93.91.138.109,1,"Categorization
+Dynamic IPs (71%)"
+31.25.243.40,1,"Categorization
+Dynamic IPs (71%)"
+107.210.106.88,1,"Categorization
+Dynamic IPs (71%)"
+181.41.126.82,1,Categorization Unsuspicious
+145.255.180.97,5.7,"Categorization
+Spam (57%)
+Dynamic IPs (86%)"
+91.146.64.121,1,Categorization Unsuspicious
+209.95.51.102,5.7,"Categorization
+Anonymisation Services (57%)"
+93.36.163.12,1,Categorization Unsuspicious
+95.30.25.176,1,"Categorization
+Dynamic IPs (71%)"
+79.126.17.128,1,"Categorization
+Dynamic IPs (71%)"
+79.118.238.2,1,"Categorization
+Dynamic IPs (71%)"
+86.125.252.217,1,"Categorization
+Dynamic IPs (71%)"
+73.247.214.245,1,Categorization Unsuspicious
+70.121.132.235,1,"Categorization
+Dynamic IPs (86%)"
+92.110.247.203,1,"Categorization
+Dynamic IPs (71%)"
+190.72.66.76,1,"Categorization
+Dynamic IPs (71%)"
+62.37.10.22,1,Categorization Unsuspicious
+src-ip,risk-factor,categories
+213.230.102.14,2.9,"Categorization
+Spam (29%)"
+62.37.10.22,1,Categorization Unsuspicious
+171.97.27.22,1,"Categorization
+Dynamic IPs (71%)"
+193.153.79.42,1,"Categorization
+Dynamic IPs (86%)"
+58.120.241.160,1,Categorization Unsuspicious
+108.26.173.247,1,Categorization Unsuspicious
+177.107.64.247,1,Categorization Unsuspicious
+62.176.91.93,1,"Categorization
+Dynamic IPs (71%)"
