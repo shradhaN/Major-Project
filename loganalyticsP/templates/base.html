@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+   {% load static %}
+  <meta charset="UTF-8">
+  <title>Log Analytics</title>
+   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <script src="{% static 'css/jquery.min.js' %}"></script>
+  <script src="{% static 'css/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/normalize.min.css' %}">
+
+  
+      <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+  
+</head>
+<body>
+
+  <head>
+ 
+</head>
+
+<div class="body">
+ 
+  
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="{% url 'homepage' %}">Log Analytics</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#who">About</a></li>
+        <li><a href="#what">Contact</a></li>
+        <li><a href="#where">Reference</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% block content %}
+
+{% endblock %}
+
+<footer class="container-fluid bg-4 text-center">
+    <a href="#" class="btn btn-default btn-lg">
+ 
+</a>
+  </footer>
+
+  
+</body>
+
+</html>
+

@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+   {% load static %}
+  <meta charset="UTF-8">
+  <title>Log Analytics</title>
+   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <script src="{% static 'css/jquery.min.js' %}"></script>
+  <script src="{% static 'css/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/normalize.min.css' %}">
+
+  
+      <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+  
+</head>
+
+
+<body>
+
+  <head>
+ 
+</head>
+
+<div class="body">
+
+  
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="{% url 'homepage' %}">Log Analytics</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{% url 'kmean' %}">K Mean</a></li>
+        <li><a href="{% url 'svm' %}">SVM</a></li>
+        <li><a href="#where">Reference</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  <div class="container-fluid bg-1 text-center">
+    <h2 >Log Analytics</h2>
+  </div>
+  
+  <div class="container-fluid bg-2 text-center">
+  <h3 >Please Enter IP Address</h3>
+
+<form method="POST" >
+{% csrf_token %}
+<input type="string" name="ip_address">
+
+<button class="btn btn-default btn-lg" type="submit">Search</button>
+</form>
+
+
+
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3 >Results</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>K Means Algorithm</p>
+      <a href="{% url 'kmean' %}" class="btn btn-default btn-lg">
+ Expand
+      </a>
+      <img src="https://s12.postimg.org/snxi2xn5p/otter3.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+      <p>SVM Algorithm</p>
+      <a href="{% url 'svm' %}" class="btn btn-default btn-lg">
+Expand
+      </a>
+      <img src="https://s12.postimg.org/picwcq4jh/otter4.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>arko algo</p>
+      <a href="{% url 'arko' %}"  class="btn btn-default btn-lg">
+ Expand
+      </a>
+      <img src="https://s12.postimg.org/d54njk48t/otter5.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+  
+ <footer class="container-fluid bg-4 text-center">
+    <a href="#" class="btn btn-default btn-lg">UP
+
+</a>
+  </footer> 
+</div>
+  
+  
+
+</body>
+
+</html>
