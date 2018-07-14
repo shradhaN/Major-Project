@@ -169,6 +169,6 @@ loaded_model = pickle.load(open(filename,'rb'))
 
 
 
-#loaded_model.visualize()
+loaded_model.visualize()
 
 
