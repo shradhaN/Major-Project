@@ -4,6 +4,10 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect, HttpResponseRedirect, reverse,render_to_response,get_object_or_404
 from django.db.models import *
 from app.models import *
+from app.knn import knnfunc, predict
+
+
+
 
 def index(request):
     context = {}
@@ -24,7 +28,13 @@ def index(request):
 
 def homepage(request):
 
-    context = {}
+    
+   # knnfunc()
+    x = [[1.0,0.0,6.0744851518415993e-30,8.554671662880071e-30,5.0]]
+    a = predict(x)
+    print(a)
+    
+    context = {"a":a}
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))
 
@@ -79,4 +89,26 @@ def three_algo(request):
         }
     template = loader.get_template('app/major/three_algo.html')
     return HttpResponse(template.render(context, request))
+
+def showimage(request):
+    # Construct the graph
+    t = arange(0.0, 2.0, 0.01)
+    s = sin(2*pi*t)
+    plot(t, s, linewidth=1.0)
+ 
+    xlabel('time (s)')
+    ylabel('voltage (mV)')
+    title('About as simple as it gets, folks')
+    grid(True)
+ 
+    # Store image in a string buffer
+    buffer = StringIO.StringIO()
+    canvas = pylab.get_current_fig_manager().canvas
+    canvas.draw()
+    pilImage = PIL.Image.frombytes("RGB", canvas.get_width_height(), canvas.tostring_rgb())
+    pilImage.save(buffer, "PNG")
+    pylab.close()
+ 
+    # Send buffer in a http response the the browser with the mime type image/png set
+    return HttpResponse(buffer.getvalue(), content_type="image/png")
 

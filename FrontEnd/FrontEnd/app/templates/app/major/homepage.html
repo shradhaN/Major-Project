@@ -1,1 +1,15 @@
 {% extends "app/major/major_base.html" %}
+
+{% block content %}
+ <div class="right_col" role="main">
+    <div class="">
+<h2>A is </h2>
+<h2>{{a}}</h2>
+{% if a %}
+   <h2> SUSpiscious</h2>
+{% else %}
+<h2>UNSuspious</h2>
+{% endif %}
+</div>
+</div>
+{% endblock content %}
