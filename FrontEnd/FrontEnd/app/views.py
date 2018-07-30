@@ -50,31 +50,24 @@ def homepage(request):
     p = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
     p.save()
 
-    print("added")
-    print("***********************************************************************")
+    tp = 789
+    tn =469
+    fp = 20
+    fn = 56
+    name = "knn"
+    precision =  (tp)/(tp+fp)#positive prediction value
+    accuracy = (tp+ tn)/(tp+tn+fp+fn)
+    hit = (tp)/(tp+fn)# recall, hit rate, true postive rate
+    tnr = (tn)/(tn+fp)
+    miss = fn/(fn+tn)# miss rate, false negativve rate
+    fallout = fp/(fn+tp)#false positive rate
+    f1score = 2*(hit*precision)/(hit+precision)#if you have an uneven class distribution. 
+    q = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
+    q.save()
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    w = Parameters.objects.filter(id =2).select_related()[0]
 
-    q = Parameters.objects.all()
-    w = q.values()
-    print(q)
-
-    print("***********************************************************************")
-
-    print(w)
-    print("***********************************************************************")
-
-
-
-
-
-
-
-
-
-
-
-
-
-    context = {"a":a, "Paramenters": Parameters}
+    context = {"a":a, "w": w}
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))
 
@@ -108,6 +101,9 @@ def svm_knn(request):
     ref_f_count = 10
     a =8
     b = 70
+    w = Parameters.objects.filter(id =2).select_related()[0]
+    context = {"a":a, "w": w}
+
     context = {'ref_m_count': ref_m_count,
         'ref_f_count':ref_f_count,
         'a':a,
