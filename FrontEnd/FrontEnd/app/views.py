@@ -41,12 +41,19 @@ def homepage(request):
     fn = 90
     name = "svm"
     precision =  (tp)/(tp+fp)#positive prediction value
+    precision =int( precision *1000 )
     accuracy = (tp+ tn)/(tp+tn+fp+fn)
+    accuracy =int( accuracy *1000 )
     hit = (tp)/(tp+fn)# recall, hit rate, true postive rate
+    hit =int( hit *1000 )
     tnr = (tn)/(tn+fp)
+    tnr =int( tnr *1000 )
     miss = fn/(fn+tn)# miss rate, false negativve rate
+    miss =int( miss *1000 )
     fallout = fp/(fn+tp)#false positive rate
+    fallout =int( fallout *1000 )
     f1score = 2*(hit*precision)/(hit+precision)#if you have an uneven class distribution. 
+    f1score =int( f1score )
     p = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
     p.save()
 
@@ -56,18 +63,29 @@ def homepage(request):
     fn = 56
     name = "knn"
     precision =  (tp)/(tp+fp)#positive prediction value
+    precision =int( precision *1000 )
     accuracy = (tp+ tn)/(tp+tn+fp+fn)
+    accuracy =int( accuracy *1000 )
     hit = (tp)/(tp+fn)# recall, hit rate, true postive rate
+    hit =int( hit *1000 )
     tnr = (tn)/(tn+fp)
+    tnr =int( tnr *1000 )
     miss = fn/(fn+tn)# miss rate, false negativve rate
+    miss =int( miss *1000 )
     fallout = fp/(fn+tp)#false positive rate
+    fallout =int( fallout *1000 )
     f1score = 2*(hit*precision)/(hit+precision)#if you have an uneven class distribution. 
+    f1score =int( f1score  )
     q = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
     q.save()
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    w = Parameters.objects.filter(id =2).select_related()[0]
+    svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
+    knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
+    # svm =0
+    # knn = 0
 
-    context = {"a":a, "w": w}
+    context = {"a":a, "svm" : svm,
+        "knn" : knn}
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))
 
@@ -97,17 +115,11 @@ def homepage(request):
 
 
 def svm_knn(request):
-    ref_m_count = 20
-    ref_f_count = 10
-    a =8
-    b = 70
-    w = Parameters.objects.filter(id =2).select_related()[0]
-    context = {"a":a, "w": w}
-
-    context = {'ref_m_count': ref_m_count,
-        'ref_f_count':ref_f_count,
-        'a':a,
-        'b':b,
+   
+    svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
+    knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
+    context = {'svm': svm,
+        'knn':knn
         }
     template = loader.get_template('app/major/svm_knn.html')
     return HttpResponse(template.render(context, request))
