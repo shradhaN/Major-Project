@@ -5,6 +5,8 @@ from django.shortcuts import render, redirect, HttpResponseRedirect, reverse,ren
 from django.db.models import *
 from app.models import *
 from app.knn import knnfunc, predict
+from app.models import *
+from app.models import Parameters
 
 
 
@@ -33,10 +35,73 @@ def homepage(request):
     x = [[1.0,0.0,6.0744851518415993e-30,8.554671662880071e-30,5.0]]
     a = predict(x)
     print(a)
-    
-    context = {"a":a}
+    tp = 565
+    tn =469
+    fp = 35
+    fn = 90
+    name = "svm"
+    precision =  (tp)/(tp+fp)#positive prediction value
+    accuracy = (tp+ tn)/(tp+tn+fp+fn)
+    hit = (tp)/(tp+fn)# recall, hit rate, true postive rate
+    tnr = (tn)/(tn+fp)
+    miss = fn/(fn+tn)# miss rate, false negativve rate
+    fallout = fp/(fn+tp)#false positive rate
+    f1score = 2*(hit*precision)/(hit+precision)#if you have an uneven class distribution. 
+    p = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
+    p.save()
+
+    print("added")
+    print("***********************************************************************")
+
+    q = Parameters.objects.all()
+    w = q.values()
+    print(q)
+
+    print("***********************************************************************")
+
+    print(w)
+    print("***********************************************************************")
+
+
+
+
+
+
+
+
+
+
+
+
+
+    context = {"a":a, "Paramenters": Parameters}
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def svm_knn(request):
     ref_m_count = 20

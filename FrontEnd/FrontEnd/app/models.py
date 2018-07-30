@@ -4,10 +4,15 @@ from django.db import models
 
 # Create your models here.
 
-class Prediction(models.Model):
+class Parameters(models.Model):
 	algorithm_name = models.CharField(max_length=100)
-	value = models.IntegerField()
-	last_entered = models.DateTimeField()
+	precision = models.FloatField()
+	accuracy = models.FloatField()
+	hit = models.FloatField()
+	tnr = models.FloatField()
+	miss = models.FloatField()
+	fallout = models.FloatField()
+	f1score = models.FloatField()
 
 class data_set(models.Model):
 	date_time = models.DateTimeField()
@@ -22,4 +27,3 @@ class data_set(models.Model):
 class classified_data(models.Model):
 	category =  models.FloatField()
 	data_set = models.OneToOneField(data_set, on_delete = models.CASCADE)
-
