@@ -10,16 +10,16 @@ if ($('#svm_knn_bar').length){
                     label: 'SVM',
                     backgroundColor: "#26B99A",
                     data: [document.getElementById("svm_p").value,document.getElementById("svm_a").value,
-                    document.getElementById("svm_h").value,document.getElementById("svm_m").value,
-                    document.getElementById("svm_f").value,document.getElementById("svm_s").value,
-                    document.getElementById("svm_t").value]
+                    document.getElementById("svm_h").value,document.getElementById("svm_s").value,
+                    document.getElementById("svm_t").value,document.getElementById("svm_m").value,
+                    document.getElementById("svm_f").value]
                 }, {
                     label: 'KNN',
                     backgroundColor: "#03586A",
                     data: [document.getElementById("knn_p").value,document.getElementById("knn_a").value,
-                    document.getElementById("knn_h").value,document.getElementById("knn_m").value,
-                    document.getElementById("knn_f").value,document.getElementById("knn_s").value,
-                    document.getElementById("knn_t").value]
+                    document.getElementById("knn_h").value,document.getElementById("knn_s").value,
+                    document.getElementById("knn_t").value,document.getElementById("knn_m").value,
+                    document.getElementById("knn_f").value]
                 }]
             },
 		 options: {

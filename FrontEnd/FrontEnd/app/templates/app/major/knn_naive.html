@@ -31,8 +31,21 @@
             </div>
             <div class="x_content">
               <canvas id="knn_naive_line"></canvas>
-              <input type="hidden" id="a" value="{{a}}">
-              <input type="hidden" id="b" value="{{b}}">
+         <input type="hidden" id="knn_p" value="{{knn.precision}}">
+              <input type="hidden" id="naive_p" value="{{naive.precision}}">
+             <input type="hidden" id="knn_a" value="{{knn.accuracy}}">
+              <input type="hidden" id="naive_a" value="{{naive.accuracy}}">
+                    <input type="hidden" id="knn_h" value="{{knn.hit}}">
+              <input type="hidden" id="naive_h" value="{{naive.hit}}">
+               <input type="hidden" id="knn_m" value="{{knn.miss}}">
+              <input type="hidden" id="naive_m" value="{{naive.miss}}">
+                    <input type="hidden" id="knn_t" value="{{knn.tnr}}">
+              <input type="hidden" id="naive_t" value="{{naive.tnr}}">
+                    <input type="hidden" id="knn_f" value="{{knn.fallout}}">
+              <input type="hidden" id="naive_f" value="{{naive.fallout}}">
+                    <input type="hidden" id="knn_s" value="{{knn.f1score}}">
+              <input type="hidden" id="naive_s" value="{{naive.f1score}}">
+
             </div>
           </div>
         </div>

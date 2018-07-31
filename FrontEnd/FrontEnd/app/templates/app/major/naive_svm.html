@@ -31,8 +31,21 @@
             </div>
             <div class="x_content">
               <canvas id="naive_svm_line"></canvas>
-              <input type="hidden" id="a" value="{{a}}">
-              <input type="hidden" id="b" value="{{b}}">
+              <input type="hidden" id="svm_p" value="{{svm.precision}}">
+              <input type="hidden" id="naive_p" value="{{naive.precision}}">
+             <input type="hidden" id="svm_a" value="{{svm.accuracy}}">
+              <input type="hidden" id="naive_a" value="{{naive.accuracy}}">
+                    <input type="hidden" id="svm_h" value="{{svm.hit}}">
+              <input type="hidden" id="naive_h" value="{{naive.hit}}">
+               <input type="hidden" id="svm_m" value="{{svm.miss}}">
+              <input type="hidden" id="naive_m" value="{{naive.miss}}">
+                    <input type="hidden" id="svm_t" value="{{svm.tnr}}">
+              <input type="hidden" id="naive_t" value="{{naive.tnr}}">
+                    <input type="hidden" id="svm_f" value="{{svm.fallout}}">
+              <input type="hidden" id="naive_f" value="{{naive.fallout}}">
+                    <input type="hidden" id="svm_s" value="{{svm.f1score}}">
+              <input type="hidden" id="naive_s" value="{{naive.f1score}}">
+
             </div>
           </div>
         </div>

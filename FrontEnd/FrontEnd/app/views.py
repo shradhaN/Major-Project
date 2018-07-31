@@ -41,19 +41,18 @@ def homepage(request):
     fn = 90
     name = "svm"
     precision =  (tp)/(tp+fp)#positive prediction value
-    precision =int( precision *1000 )
+    precision = round(precision*100,2)
     accuracy = (tp+ tn)/(tp+tn+fp+fn)
-    accuracy =int( accuracy *1000 )
+    accuracy = round(accuracy *100,2)
     hit = (tp)/(tp+fn)# recall, hit rate, true postive rate
-    hit =int( hit *1000 )
+    hit = round(hit*100,2)
     tnr = (tn)/(tn+fp)
-    tnr =int( tnr *1000 )
+    tnr = round(tnr*100,2)
     miss = fn/(fn+tn)# miss rate, false negativve rate
-    miss =int( miss *1000 )
+    miss =  round(miss*100,2)
     fallout = fp/(fn+tp)#false positive rate
-    fallout =int( fallout *1000 )
-    f1score = 2*(hit*precision)/(hit+precision)#if you have an uneven class distribution. 
-    f1score =int( f1score )
+    fallout = round(fallout *100,2)
+    f1score = round(2*(hit*precision)/(hit+precision),2)#if you have an uneven class distribution. 
     p = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
     p.save()
 
@@ -63,54 +62,53 @@ def homepage(request):
     fn = 56
     name = "knn"
     precision =  (tp)/(tp+fp)#positive prediction value
-    precision =int( precision *1000 )
+    precision = round(precision*100,2)
     accuracy = (tp+ tn)/(tp+tn+fp+fn)
-    accuracy =int( accuracy *1000 )
+    accuracy = round(accuracy *100,2)
     hit = (tp)/(tp+fn)# recall, hit rate, true postive rate
-    hit =int( hit *1000 )
+    hit = round(hit*100,2)
     tnr = (tn)/(tn+fp)
-    tnr =int( tnr *1000 )
+    tnr = round(tnr*100,2)
     miss = fn/(fn+tn)# miss rate, false negativve rate
-    miss =int( miss *1000 )
+    miss =  round(miss*100,2)
     fallout = fp/(fn+tp)#false positive rate
-    fallout =int( fallout *1000 )
-    f1score = 2*(hit*precision)/(hit+precision)#if you have an uneven class distribution. 
-    f1score =int( f1score  )
+    fallout = round(fallout *100,2)
+    f1score = round(2*(hit*precision)/(hit+precision),2)#if you have an uneven class distribution. 
     q = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
     q.save()
+
+    tp = 539
+    tn =129
+    fp = 90
+    fn = 20
+    name = "naive"
+    precision =  (tp)/(tp+fp)#positive prediction value
+    precision = round(precision*100,2)
+    accuracy = (tp+ tn)/(tp+tn+fp+fn)
+    accuracy = round(accuracy *100,2)
+    hit = (tp)/(tp+fn)# recall, hit rate, true postive rate
+    hit = round(hit*100,2)
+    tnr = (tn)/(tn+fp)
+    tnr = round(tnr*100,2)
+    miss = fn/(fn+tn)# miss rate, false negativve rate
+    miss =  round(miss*100,2)
+    fallout = fp/(fn+tp)#false positive rate
+    fallout = round(fallout *100,2)
+    f1score = round(2*(hit*precision)/(hit+precision),2)#if you have an uneven class distribution. 
+    z = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
+    z.save()
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
     knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
+    naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]
     # svm =0
     # knn = 0
 
     context = {"a":a, "svm" : svm,
-        "knn" : knn}
+        "knn" : knn,
+        "naive": naive}
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -125,40 +123,31 @@ def svm_knn(request):
     return HttpResponse(template.render(context, request))
 
 def knn_naive(request):
-    ref_m_count = 20
-    ref_f_count = 10
-    a =8
-    b = 70
-    context = {'ref_m_count': ref_m_count,
-        'ref_f_count':ref_f_count,
-        'a':a,
-        'b':b,
+    naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]
+    knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
+    context = {'naive': naive,
+        'knn':knn
         }
     template = loader.get_template('app/major/knn_naive.html')
     return HttpResponse(template.render(context, request))
 
 def naive_svm(request):
-    ref_m_count = 20
-    ref_f_count = 10
-    a =8
-    b = 70
-    context = {'ref_m_count': ref_m_count,
-        'ref_f_count':ref_f_count,
-        'a':a,
-        'b':b,
+    svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
+    naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]
+    context = {'svm': svm,
+        'naive':naive
         }
     template = loader.get_template('app/major/naive_svm.html')
     return HttpResponse(template.render(context, request))
 
 def three_algo(request):
-    ref_m_count = 20
-    ref_f_count = 10
-    a =8
-    b = 70
-    context = {'ref_m_count': ref_m_count,
-        'ref_f_count':ref_f_count,
-        'a':a,
-        'b':b,
+    svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
+    knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
+    naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]
+    
+    context = {'svm': svm,
+        'knn':knn,
+        'naive':naive
         }
     template = loader.get_template('app/major/three_algo.html')
     return HttpResponse(template.render(context, request))
