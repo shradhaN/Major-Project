@@ -13,7 +13,11 @@ from sklearn.metrics import roc_curve
 from sklearn.metrics import roc_auc_score
 #import GridSearchCV
 from sklearn.model_selection import GridSearchCV
+from app.models import Parameters
 
+
+
+#svmknn
 def knnfunc():
 
 	plt.style.use('ggplot')
@@ -41,15 +45,6 @@ def knnfunc():
 	    
 	    #Compute accuracy on the test set
 	    test_accuracy[i] = knn.score(X_test, y_test) 
-	#Generate plot
-	plt.title('k-NN Varying number of neighbors')
-	plt.plot(neighbors, test_accuracy, label='Testing Accuracy')
-	plt.plot(neighbors, train_accuracy, label='Training accuracy')
-	plt.legend()
-	plt.xlabel('Number of neighbors')
-	plt.ylabel('Accuracy')
-	plt.savefig("knn.png")#save inside static/images
-	#plt.show()
 	#Setup a knn classifier with k neighbors
 	knn = KNeighborsClassifier(n_neighbors=2)
 	#Fit the model
@@ -64,20 +59,31 @@ def knnfunc():
 	knn.score(X_test,y_test)
 	#let us get the predictions using the classifier we had fit above
 	y_pred = knn.predict(X_test)
-	confusion_matrix(y_test,y_pred)
+	a = confusion_matrix(y_test,y_pred)
+	tp = a[0][0]
+	tn =a[1][1]
+	fp = a[0][1]
+	fn = a[1][0]
+	name = "knn"
+	precision =  (tp)/(tp+fp)#positive prediction value
+	precision = round(precision*100,2)
+	accuracy = (tp+ tn)/(tp+tn+fp+fn)
+	accuracy = round(accuracy *100,2)
+	hit = (tp)/(tp+fn)# recall, hit rate, true postive rate
+	hit = round(hit*100,2)
+	tnr = (tn)/(tn+fp)
+	tnr = round(tnr*100,2)
+	miss = fn/(fn+tn)# miss rate, false negativve rate
+	miss =  round(miss*100,2)
+	fallout = fp/(fn+tp)#false positive rate
+	fallout = round(fallout *100,2)
+	f1score = round(2*(hit*precision)/(hit+precision),2)#if you have an uneven class distribution. 
+	z = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
+	z.save()
 	pd.crosstab(y_test, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
 	print(classification_report(y_test,y_pred))
 	y_pred_proba = knn.predict_proba(X_test)[:,1]
 	fpr, tpr, thresholds = roc_curve(y_test, y_pred_proba)
-
-	plt.plot([0,1],[0,1],'k--')
-	plt.plot(fpr,tpr, label='Knn')
-	plt.xlabel('fpr')
-	plt.ylabel('tpr')
-	plt.title('Knn(n_neighbors=7) ROC curve')
-	plt.savefig("knnroc.png")
-	#plt.show()
-
 
 	roc_auc_score(y_test,y_pred_proba)
 

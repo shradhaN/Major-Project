@@ -5,9 +5,9 @@ if ($('#svm_knn_bar').length){
 		type:'bar',
 
 		 data: {
-                labels: ["Precision", "Accuracy", "Hits", "Miss", "Fallout", "F1Score", "TNR"],
+                labels: ["Precision", "Accuracy", "Hits",  "F1Score", "TNR","Miss", "Fallout"],
                 datasets: [{
-                    label: 'SVM',
+                    label: 'Logistic Regression',
                     backgroundColor: "#26B99A",
                     data: [document.getElementById("svm_p").value,document.getElementById("svm_a").value,
                     document.getElementById("svm_h").value,document.getElementById("svm_s").value,

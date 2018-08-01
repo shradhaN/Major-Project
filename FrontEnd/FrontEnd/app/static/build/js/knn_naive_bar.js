@@ -5,7 +5,7 @@ if ($('#knn_naive_bar').length){
 		type:'bar',
 		
 		 data: {
-                labels: ["Precision", "Accuracy", "Hits", "Miss", "Fallout", "F1Score", "TNR"],
+         labels: ["Precision", "Accuracy", "Hits",  "F1Score", "TNR","Miss", "Fallout"],
                 datasets: [{
                     label: 'Naive',
                     backgroundColor: "#26B99A",

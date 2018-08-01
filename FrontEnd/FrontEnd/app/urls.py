@@ -8,11 +8,10 @@ urlpatterns = [
     # url(r'^.*\.html', views.gentella_html, name='gentella'),
 
     # The home page
-    url(r'^$', views.index, name='index'),
-    url(r'^home/$', views.homepage, name='homepage'),
+    url(r'^$', views.homepage, name='homepage'),
     url(r'^svm_knn/$', views.svm_knn, name='svm_knn'),
     url(r'^knn_naive/$', views.knn_naive, name='knn_naive'),
     url(r'^naive_svm/$', views.naive_svm, name='naive_svm'),
-     url(r'^three_algo/$', views.three_algo, name='three_algo'),
+    url(r'^three_algo/$', views.three_algo, name='three_algo'),
 
 ]

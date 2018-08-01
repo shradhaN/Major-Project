@@ -4,7 +4,7 @@ if ($('#three_algo_bar').length){
 	var mybarChart=new Chart(ctx,{
 		type:'bar',
 		 data: {
-                labels: ["Precision", "Accuracy", "Hits", "Miss", "Fallout", "F1Score", "TNR"],
+                labels: ["Precision", "Accuracy", "Hits",  "F1Score", "TNR","Miss", "Fallout"],
                 datasets: [{
                     label: 'SVM',
                     backgroundColor: "#1abc9c",
