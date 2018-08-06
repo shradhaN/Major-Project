@@ -9,6 +9,7 @@ from app.logistic_regression import logisticfunc
 from app.Linear_Discriminant import linearfunc
 from app.models import *
 from app.models import Parameters
+from app.preprocessin import *
 
 
 
@@ -30,18 +31,58 @@ def index(request):
 #     return HttpResponse(template.render(context, request))
 
 
-def homepage(request):
-
-    
-    knnfunc()
-    logisticfunc()
-    linearfunc()
+def homepage(request):    
+    #knnfunc()
+    #logisticfunc()
+    #linearfunc()
     svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
     knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
     naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]
+    
+
+    latest_id = data_set.objects.all()
+    last_id= len(latest_id)
+    if latest_id == None:
+        last_id = 0
+
+    # Please uncomment these 2 lines while running for the first time
+    # change fire3.txt for different firewall log file
+    #file_add = "/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/app/fire3.txt"
+    #convert_to_csv(file_add, last_id)
+    print("converted")    
+    #knnfunc()
+    
+    #get the values from database and use prediction
+    cnx = sqlite3.connect("/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/db.sqlite3")
+    df = pd.read_sql("SELECT * FROM app_data_set_normalized", con=cnx)
+    X = np.array(df.drop(["id","data_set_id"],1))
+    y = np.array(len(X))  
+
+    #predict the values
+    y_pred = predict(X)    
+    #save predicted values into a new database
+    df_pred = pd.DataFrame(y_pred)
+    df_pred["data_set_id"]=df["data_set_id"]
+    df_pred.columns=["category", "data_set_id"]
+    #delete the previous database
+    predicted_values = classified_data.objects.all()
+    predicted_values.delete()
+    #add new prediction into the database
+    df_pred.to_sql(name="app_classified_data",if_exists = "append", con =cnx, index=False)
+    
+
+    #get values to display in database
+    count_suspicious = len(classified_data.objects.filter(category=1))
+    count_total_records = len(classified_data.objects.all())
+    count_unsuspicious = len(classified_data.objects.filter(category=0))
+
     context = {"svm" : svm,
         "knn" : knn,
-        "naive": naive}
+        "naive": naive,
+        'suspicious':count_suspicious,
+        'total':count_total_records,
+        'unsuspicious':count_unsuspicious,}
+
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))
 

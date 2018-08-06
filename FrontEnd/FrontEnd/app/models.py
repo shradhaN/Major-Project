@@ -15,8 +15,9 @@ class Parameters(models.Model):
 	f1score = models.FloatField()
 
 class data_set(models.Model):
-	date_time = models.DateTimeField()
-	action = models.CharField(max_length = 100)
+	date = models.CharField(max_length = 50)
+	time = models.CharField(max_length = 50)
+	action = models.CharField(max_length = 120)
 	protocol = models.CharField(max_length = 100)
 	src_ip = models.FloatField()
 	dst_ip=models.FloatField()
@@ -27,3 +28,14 @@ class data_set(models.Model):
 class classified_data(models.Model):
 	category =  models.FloatField()
 	data_set = models.OneToOneField(data_set, on_delete = models.CASCADE)
+
+class data_set_normalized(models.Model):
+ 	action_normal = models.FloatField()
+ 	protocol_normal = models.FloatField()
+ 	src_ip_normal=models.FloatField()
+ 	dst_ip_normal = models.FloatField()
+ 	path_normal = models.FloatField()
+ 	data_set = models.OneToOneField(data_set, on_delete=models.CASCADE)
+ 	
+
+

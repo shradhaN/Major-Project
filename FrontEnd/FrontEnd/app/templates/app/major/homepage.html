@@ -1,9 +1,27 @@
 {% extends "app/major/major_base.html" %}
+{% block title %} Dash Board {% endblock title %}
 
 {% block content %}
  <div class="right_col" role="main">
-    <div class="">
-
-</div>
-</div>
+    <!-- top tiles -->
+    <div class="row tile_count">
+      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i> Total Records Predicted</span>
+        <div class="count">{{total}}</div>
+        
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-clock-o"></i> Suspicious Records Predicted</span>
+        <div class="count">{{suspicious}}</div>
+        
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <span class="count_top"><i class="fa fa-user"></i> Unsuspicious Records Predicted</span>
+        <div class="count green">{{unsuspicious}}</div>
+        
+      </div>
+      
+      
+     
+    </div>
 {% endblock content %}

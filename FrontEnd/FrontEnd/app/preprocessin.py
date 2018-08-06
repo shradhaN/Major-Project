@@ -42,8 +42,16 @@ import pandas as pd
 import csv
 import socket, struct
 from binascii import hexlify
+
 from sklearn import preprocessing
 
+import sqlite3
+from pandas.io import sql
+from app.models import *
+from django.db import IntegrityError
+
+
+# Create your connection.
 
 def ConvertIptoNum(ip):
     try:
@@ -52,29 +60,21 @@ def ConvertIptoNum(ip):
     except Exception:
         return int(hexlify(socket.inet_pton(socket.AF_INET6, ip)), 16)
 
-
-    
-def convert_to_csv():
-    #Convert the raw file to a csv file
-    with open('firewall.txt', 'r') as in_file:
-        stripped = (line.strip() for line in in_file)
-        lines = (line.split(" ") for line in stripped if line)
-        with open('firewall2.csv', 'w') as out_file:
-            writer = csv.writer(out_file)
-            writer.writerow(('date','time','action', 'protocol' ,'src-ip', 'dst-ip', 'src-port', 'dst-port' ,'size' ,'tcpflags' ,'tcpsyn','tcpack', 'tcpwin', 'icmptype', 'icmpcode', 'info','path'
-    ))
-            writer.writerows(lines)
-            
-            
-def standardize():        
+def standardize():  
+    print("********************************************")
+    print("chiryo")
+    print("********************************************")      
     #read the csv file        
     df = pd.read_csv('firewall2.csv', dtype=object )
+    print(df)
     #drop the column if any value is missing
     #df= df.dropna(axis= "columns", how = "all", inplace=True)
     #drop unnecessary files
     df.drop(['tcpflags','size','tcpsyn','tcpack','tcpwin','icmptype','icmpcode','info'], axis =1, inplace = True)
     #drop any duplicate files
     df.drop_duplicates(keep="first", inplace=True)
+
+    print("dropped")
 
     #standardize action
     unique_action = df['action'].unique()
@@ -85,7 +85,7 @@ def standardize():
             df['action']=df['action'].replace("DENY",1)
         else:
             df['action']=df['action'].replace(action,-9999)
-
+    print("action")
     #standardize protocol
     unique_protocol = df['protocol'].unique()
     for protocol in unique_protocol:
@@ -97,7 +97,7 @@ def standardize():
             df['protocol'] =  df['protocol'].replace('ICMP', 2)
         else:
             df['protocol'] =  df['protocol'].replace(protocol, -9999)
-
+    print("protocol")
     #standardize path
     unique_path = df['path'].unique()
     for path in unique_path:
@@ -108,81 +108,122 @@ def standardize():
         else:
             df["path"]=df['path'].replace(path,-9999)
 
-    df['dst-port'] = df['dst-port'].replace('-', -99999)
-    df['dst-port'] = df['dst-port'].apply(pd.to_numeric)
-    df['src-port'] = df['src-port'].replace('-',-9999)
-    df['src-port'] = df['src-port'].apply(pd.to_numeric)
+    df['dst_port'] = df['dst_port'].replace('-', -99999)
+    df['dst_port'] = df['dst_port'].apply(pd.to_numeric)
+    df['src_port'] = df['src_port'].replace('-',-9999)
+    df['src_port'] = df['src_port'].apply(pd.to_numeric)
     
-    df['src-ip']=df['src-ip'].replace('-','0.0.0.0')
-    df['dst-ip']=df['dst-ip'].replace('-','0.0.0.0')
+    df['src_ip']=df['src_ip'].replace('-','0.0.0.0')
+    df['dst_ip']=df['dst_ip'].replace('-','0.0.0.0')
 
     #check and find the risk factors first
     #use the convert ip to convert the IP to neumeric value
     
+
     df.dropna(inplace=True)
-    df.to_csv("firewall2.csv",index=False)
+    #df.to_csv("firewall_standard.csv", index=False)
+    cnx = sqlite3.connect("/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/db.sqlite3")
 
+    df.to_sql(name="app_data_set", con = cnx, if_exists = "append", index=False)
 
-def ip_to_num():
+  
+def ip_to_num(latest_id):
     #convert IP to Num
-    with open('firewall2.csv', 'r') as f:
-        reader = csv.reader(f)
-        your_list = list(reader)
-        i = 1
-        naya_ip=[]
-
-        counter = 0
-        print(len(your_list))
-        print("**************")
-        for i in range(1,len(your_list)):
-            #your_list[i][0]    
-            
-            new_ip_src=ConvertIptoNum(your_list[i][4])
-            new_ip_dst=ConvertIptoNum(your_list[i][5])
-
-            #naya_ip.append(new_ip)
-            with open('firewall_neumeric.csv','a') as w:
-                counter = counter + 1
-                c = csv.writer(w) 
-                #change this as the csv file is different due to the presence of date and time
-                #uta check garera halne yeta
-                #does not include the risk-factors---- must
-                value = [your_list[i][0],your_list[i][1],your_list[i][2],your_list[i][3],new_ip_src,new_ip_dst,your_list[i][6],your_list[i][7],your_list[i][8]]
-                #c.writerow(('date','time','action','protocol','src-ip','dst-ip','src-port','dst-port'))
-                c.writerow(value)
-        print("rows")
-        print(counter)
-
-def normalixe():
-    df2=pd.read_csv("firewall_neumeric.csv", names =['date','time','action','protocol','src-ip','dst-ip','src-port','dst-port','path'])
+    cnx = sqlite3.connect("/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/db.sqlite3")
+    sql_ = """SELECT * FROM app_data_set WHERE id > (?)"""
+    df = pd.read_sql(sql_,params = (latest_id,), con=cnx)
     
-    print(list(df2))
-    #df2['src-ip-risk-factor'] = df2['src-ip-risk-factor'].apply(pd.to_numeric)
-    #df2['dst-ip-risk-factor'] = df2['dst-ip-risk-factor'].apply(pd.to_numeric)
-    #df2['total-risk-factor']=df2['totoal-risk-factor'].apply(pd.to_neumeric)
-    df2['src-port']=df2['src-port'].apply(pd.to_numeric)
-    df2['dst-port']=df2['dst-port'].apply(pd.to_numeric)
-    df2.drop(['date','time'], axis =1, inplace = True)
+   # print(df)
+    for ip in df["src_ip"]:
+        ip_convert = ConvertIptoNum(ip)
+        df["src_ip"]=df["src_ip"].replace(ip,ip_convert)
 
-    #normalize the values
+    for ip in df["dst_ip"]:
+        ip_convert = ConvertIptoNum(ip)
+        df["dst_ip"]=df["dst_ip"].replace(ip,ip_convert)
+
+    df.drop(['date','time','src_port','dst_port'], axis =1, inplace = True)
+     #normalize the values
     min_max_scaler = preprocessing.MinMaxScaler()
-    np_scaled = min_max_scaler.fit_transform(df2)
-    df = pd.DataFrame(np_scaled)
+    np_scaled = min_max_scaler.fit_transform(df.drop("id", axis=1))
+    df2 = pd.DataFrame(np_scaled)
+    df2["data_set_id"] = df["id"]
+
+    df2.columns = ["action_normal","protocol_normal","src_ip_normal","dst_ip_normal","path_normal","data_set_id"]
+    df2.to_sql(name="app_data_set_normalized",if_exists = "append", con =cnx, index=False)
     
-    df['src-ip-risk-factor']=""
-    df['dst-ip-risk-factor']=""
-    df['total-risk-factor']=""
-    df.to_csv("final_data_set.csv",index=False)
+
+# def normalixe():
+
+#     df2=pd.read_csv("firewall_neumeric.csv", names =['date','time','action_normal','protocol_normal','src_ip_normalized','dst_ip_normalized','src_port','dst_port','path'])
+    
+#     print(list(df2))
+#     #df2['src-ip-risk-factor'] = df2['src-ip-risk-factor'].apply(pd.to_numeric)
+#     #df2['dst-ip-risk-factor'] = df2['dst-ip-risk-factor'].apply(pd.to_numeric)
+#     #df2['total-risk-factor']=df2['totoal-risk-factor'].apply(pd.to_neumeric)
+#     # df2['src_port']=df2['src_port'].apply(pd.to_numeric)
+#     # df2['dst_port']=df2['dst_port'].apply(pd.to_numeric)
+#     df2.drop(['date','time','src_port','dst_port'], axis =1, inplace = True)
+
+#     #normalize the values
+#     min_max_scaler = preprocessing.MinMaxScaler()
+#     np_scaled = min_max_scaler.fit_transform(df2)
+#     df = pd.DataFrame(np_scaled)
+    
+#     df.columns = ['action_normal','protocol_normal','src_ip_normalized','dst_ip_normalized','path_normal']
+#     df.to_csv("final_data_set.csv",index=False)
+#     cnx = sqlite3.connect("/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/db.sqlite3")
+
+#     df.to_sql(name="app_data_set_normalized", con = cnx, if_exists = "append", index=False)
+
+
+def convert_to_csv(filename_add, latest_id):
+    #Convert the raw file to a csv file
+    with open(filename_add, 'r') as in_file:
+        stripped = (line.strip() for line in in_file)
+        lines = (line.split(" ") for line in stripped if line)
+        with open('firewall2.csv', 'w') as out_file:
+            writer = csv.writer(out_file)
+            writer.writerow(('date','time','action', 'protocol' ,'src_ip', 'dst_ip', 'src_port', 'dst_port' ,'size' ,'tcpflags' ,'tcpsyn','tcpack', 'tcpwin', 'icmptype', 'icmpcode', 'info','path'
+    ))
+            writer.writerows(lines)
+    standardize()  
+    ip_to_num(latest_id)
+    print("converted ip to num")
+           
+            
+
+
+# def normalixe():
+#     df2=pd.read_csv("firewall_neumeric.csv", names =['date','time','action','protocol','src_ip','dst_ip','src_port','dst_port','path'])
+    
+#     print(list(df2))
+#     #df2['src-ip-risk-factor'] = df2['src-ip-risk-factor'].apply(pd.to_numeric)
+#     #df2['dst-ip-risk-factor'] = df2['dst-ip-risk-factor'].apply(pd.to_numeric)
+#     #df2['total-risk-factor']=df2['totoal-risk-factor'].apply(pd.to_neumeric)
+#     df2['src_port']=df2['src_port'].apply(pd.to_numeric)
+#     df2['dst_port']=df2['dst_port'].apply(pd.to_numeric)
+#     df2.drop(['date','time'], axis =1, inplace = True)
+
+#     #normalize the values
+#     min_max_scaler = preprocessing.MinMaxScaler()
+#     np_scaled = min_max_scaler.fit_transform(df2)
+#     df = pd.DataFrame(np_scaled)
+    
+#     df['src-ip-risk-factor']=""
+#     df['dst-ip-risk-factor']=""
+#     df['total-risk-factor']=""
+#     df.to_csv("final_data_set.csv",index=False)
                     
                     
-convert_to_csv()
-print("converted to csv")
-standardize()
-print("standardized")
-ip_to_num()
-print("converted ip to num")
-normalixe()
-print("completed")
+# convert_to_csv()
+# print("converted to csv")
+# standardize()
+# print("standardized")
+# ip_to_num()
+# print("converted ip to num")
+# normalixe()
+# print("completed")
                     
         
 
