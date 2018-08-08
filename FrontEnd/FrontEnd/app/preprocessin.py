@@ -72,7 +72,7 @@ def standardize():
     #drop unnecessary files
     df.drop(['tcpflags','size','tcpsyn','tcpack','tcpwin','icmptype','icmpcode','info'], axis =1, inplace = True)
     #drop any duplicate files
-    df.drop_duplicates(keep="first", inplace=True)
+    #df.drop_duplicates(keep="first", inplace=True)
 
     print("dropped")
 
@@ -152,36 +152,11 @@ def ip_to_num(latest_id):
     df2.columns = ["action_normal","protocol_normal","src_ip_normal","dst_ip_normal","path_normal","data_set_id"]
     df2.to_sql(name="app_data_set_normalized",if_exists = "append", con =cnx, index=False)
     
-
-# def normalixe():
-
-#     df2=pd.read_csv("firewall_neumeric.csv", names =['date','time','action_normal','protocol_normal','src_ip_normalized','dst_ip_normalized','src_port','dst_port','path'])
-    
-#     print(list(df2))
-#     #df2['src-ip-risk-factor'] = df2['src-ip-risk-factor'].apply(pd.to_numeric)
-#     #df2['dst-ip-risk-factor'] = df2['dst-ip-risk-factor'].apply(pd.to_numeric)
-#     #df2['total-risk-factor']=df2['totoal-risk-factor'].apply(pd.to_neumeric)
-#     # df2['src_port']=df2['src_port'].apply(pd.to_numeric)
-#     # df2['dst_port']=df2['dst_port'].apply(pd.to_numeric)
-#     df2.drop(['date','time','src_port','dst_port'], axis =1, inplace = True)
-
-#     #normalize the values
-#     min_max_scaler = preprocessing.MinMaxScaler()
-#     np_scaled = min_max_scaler.fit_transform(df2)
-#     df = pd.DataFrame(np_scaled)
-    
-#     df.columns = ['action_normal','protocol_normal','src_ip_normalized','dst_ip_normalized','path_normal']
-#     df.to_csv("final_data_set.csv",index=False)
-#     cnx = sqlite3.connect("/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/db.sqlite3")
-
-#     df.to_sql(name="app_data_set_normalized", con = cnx, if_exists = "append", index=False)
-
-
 def convert_to_csv(filename_add, latest_id):
     #Convert the raw file to a csv file
     with open(filename_add, 'r') as in_file:
         stripped = (line.strip() for line in in_file)
-        lines = (line.split(" ") for line in stripped if line)
+        lines = (line.split(" ") for line in stripped if not line.startswith("#"))
         with open('firewall2.csv', 'w') as out_file:
             writer = csv.writer(out_file)
             writer.writerow(('date','time','action', 'protocol' ,'src_ip', 'dst_ip', 'src_port', 'dst_port' ,'size' ,'tcpflags' ,'tcpsyn','tcpack', 'tcpwin', 'icmptype', 'icmpcode', 'info','path'
@@ -194,38 +169,6 @@ def convert_to_csv(filename_add, latest_id):
             
 
 
-# def normalixe():
-#     df2=pd.read_csv("firewall_neumeric.csv", names =['date','time','action','protocol','src_ip','dst_ip','src_port','dst_port','path'])
-    
-#     print(list(df2))
-#     #df2['src-ip-risk-factor'] = df2['src-ip-risk-factor'].apply(pd.to_numeric)
-#     #df2['dst-ip-risk-factor'] = df2['dst-ip-risk-factor'].apply(pd.to_numeric)
-#     #df2['total-risk-factor']=df2['totoal-risk-factor'].apply(pd.to_neumeric)
-#     df2['src_port']=df2['src_port'].apply(pd.to_numeric)
-#     df2['dst_port']=df2['dst_port'].apply(pd.to_numeric)
-#     df2.drop(['date','time'], axis =1, inplace = True)
-
-#     #normalize the values
-#     min_max_scaler = preprocessing.MinMaxScaler()
-#     np_scaled = min_max_scaler.fit_transform(df2)
-#     df = pd.DataFrame(np_scaled)
-    
-#     df['src-ip-risk-factor']=""
-#     df['dst-ip-risk-factor']=""
-#     df['total-risk-factor']=""
-#     df.to_csv("final_data_set.csv",index=False)
-                    
-                    
-# convert_to_csv()
-# print("converted to csv")
-# standardize()
-# print("standardized")
-# ip_to_num()
-# print("converted ip to num")
-# normalixe()
-# print("completed")
-                    
-        
 
                     
                     

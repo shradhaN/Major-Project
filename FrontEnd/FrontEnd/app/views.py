@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect, HttpResponseRedirect, reverse,render_to_response,get_object_or_404
 from django.db.models import *
 from app.models import *
-from app.knn import knnfunc, predict
+from app.knn import knnfunc, knn_predict
 from app.logistic_regression import logisticfunc
 from app.Linear_Discriminant import linearfunc
 from app.models import *
@@ -32,25 +32,17 @@ def index(request):
 
 
 def homepage(request):    
-    #knnfunc()
-    #logisticfunc()
-    #linearfunc()
+    knnfunc()
+    logisticfunc()
+    linearfunc()
     svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
     knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
     naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]
     
 
-    latest_id = data_set.objects.all()
-    last_id= len(latest_id)
-    if latest_id == None:
-        last_id = 0
-
-    # Please uncomment these 2 lines while running for the first time
-    # change fire3.txt for different firewall log file
-    #file_add = "/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/app/fire3.txt"
-    #convert_to_csv(file_add, last_id)
-    print("converted")    
+        
     #knnfunc()
+    #preprocess_log()
     
     #get the values from database and use prediction
     cnx = sqlite3.connect("/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/db.sqlite3")
@@ -59,8 +51,9 @@ def homepage(request):
     y = np.array(len(X))  
 
     #predict the values
-    y_pred = predict(X)    
+    y_pred = knn_predict(X)    
     #save predicted values into a new database
+    print(y_pred)
     df_pred = pd.DataFrame(y_pred)
     df_pred["data_set_id"]=df["data_set_id"]
     df_pred.columns=["category", "data_set_id"]
@@ -149,4 +142,18 @@ def showimage(request):
  
     # Send buffer in a http response the the browser with the mime type image/png set
     return HttpResponse(buffer.getvalue(), content_type="image/png")
+
+
+def preprocess_log():
+    latest_id = data_set.objects.all()
+    last_id= len(latest_id)
+    if latest_id == None:
+        last_id = 0
+
+    # Please uncomment these 2 lines while running for the first time
+    # change fire3.txt for different firewall log file
+    file_add = "/home/shradha/virtualenvironment/ML/bin/Major project/FrontEnd/FrontEnd/app/cmalogs.txt"
+    convert_to_csv(file_add, last_id)
+    print("converted")
+
 

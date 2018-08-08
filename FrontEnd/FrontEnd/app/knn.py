@@ -21,7 +21,7 @@ from app.models import Parameters
 def knnfunc():
 
 	plt.style.use('ggplot')
-	df = pd.read_csv("/home/suravi/Major-Project/FrontEnd/FrontEnd/app/static/dataset/Firewall_final_normalized.csv")
+	df = pd.read_csv("/home/shradha/virtualenvironment/ML/bin/Major project/ExampleSets/Firewall_final_normalized.csv")
 
 	df.head()
 	df.shape
@@ -88,6 +88,6 @@ def knnfunc():
 	roc_auc_score(y_test,y_pred_proba)
 
 
-def predict(x):
+def knn_predict(x):
 	loaded_model = pickle.load(open("knn-suravi.sav",'rb'))
 	return loaded_model.predict(x)
