@@ -1,12 +1,11 @@
- if ($('#three_algo_line').length) {
-
+if ($('#three_algo_line').length) {
         var ctx = document.getElementById("three_algo_line");
         var lineChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["January", "Feb", "March", "April"],
+                labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
                 datasets: [{
-                    label: "Naive",
+                    label: "Suspicious",
                     backgroundColor: "rgba(38, 185, 154, 0.31)",
                     borderColor: "rgba(38, 185, 154, 0.7)",
                     pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -14,20 +13,10 @@
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
-                    data:[document.getElementById("a").value, 10,37,46]
-                },
-                {
-                    label: "KNN",
-                    backgroundColor: "rgba(208, 201, 73, 0.82)",
-                    borderColor: "rgba(207, 183, 42, 1)",
-                    pointBorderColor: "rgba(207, 183, 42, 1)",
-                    pointBackgroundColor: "rgba(207, 183, 42, 1)",
-                    pointHoverBackgroundColor: "#fff",
-                    pointHoverBorderColor: "rgba(220,220,220,1)",
-                    pointBorderWidth: 1,
-                    data:[56, 10,67,96]
-                }, {
-                    label: "SVM",
+                    data:[ 6,3,4,document.getElementById("suspicious").value]
+                }/*,
+      {
+                    label: "Unsuspicious",
                     backgroundColor: "rgba(3, 88, 106, 0.3)",
                     borderColor: "rgba(3, 88, 106, 0.70)",
                     pointBorderColor: "rgba(3, 88, 106, 0.70)",
@@ -35,9 +24,8 @@
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(151,187,205,1)",
                     pointBorderWidth: 1,
-                    data: [document.getElementById("b").value, 80, 45,20]
-                }]
+                    data: [ 546, 532,578,document.getElementById("unsuspicious").value]
+                }*/]
             },
         });
-
     }

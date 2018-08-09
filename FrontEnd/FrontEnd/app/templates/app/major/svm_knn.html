@@ -1,14 +1,10 @@
 {% extends "app/major/major_base.html" %}
-
 {% block title %} SVM VS KNN {% endblock title %}
-
 {% block stylesheets %}
   {{ block.super }}
 {% endblock stylesheets %}
-
 {% block content %}
  
-
  <div class="right_col" role="main">
     <div class="">
       <!-- Line graph-->
@@ -45,14 +41,12 @@
               <input type="hidden" id="knn_f" value="{{knn.fallout}}">
                     <input type="hidden" id="svm_s" value="{{svm.f1score}}">
               <input type="hidden" id="knn_s" value="{{knn.f1score}}">
-
-
             </div>
           </div>
         </div> -->
  <!-- Line graph-->
      <!--Bar graph Js-->
-        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-8 col-sm-8 col-xs-8">
           <div class="x_panel">
             <div class="x_title">
               <h2> Bar Chart </h2>
@@ -84,17 +78,13 @@
               <input type="hidden" id="knn_f" value="{{knn.fallout}}">
                     <input type="hidden" id="svm_s" value="{{svm.f1score}}">
               <input type="hidden" id="knn_s" value="{{knn.f1score}}">
-
-
             </div>
           </div>
         </div>
    
  <!-- Bar Graph End-->
-
   
   <!-- piechart-->
-
  <!-- <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="x_panel">
             <div class="x_title">
@@ -121,11 +111,7 @@
             </div>
           </div>
         </div> -->
-
 <!-- piechart end-->
-
-
-
  <!--Matplotlib-->
         <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="x_panel">
@@ -134,7 +120,6 @@
             </div>
           </div>
         </div>
-
  <!--Matplotlib-->
  <!--Matplotlib-->
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -144,19 +129,12 @@
             </div>
           </div>
         </div>
-
  <!--Matplotlib-->
-
-
  
-
-
-
            </div>
     </div>
        
 {% endblock content %}
-
 {% block javascripts %}
   {{ block.super }}
   <!-- Chart.js -->
@@ -164,6 +142,4 @@
     <script src="/static/build/js/svm_knn_bar.js"></script>
     <script src="/static/build/js/svm_knn_line.js"></script>
     <script src="/static/build/js/svm_knn_pie.js"></script>
-
-
 {% endblock javascripts %}
