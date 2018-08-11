@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from app import views
+from app.helpers import LogFetcher 
 
 urlpatterns = [
     # Matches any html file - to be used for gentella
@@ -15,3 +16,5 @@ urlpatterns = [
     url(r'^three_algo/$', views.three_algo, name='three_algo'),
 
 ]
+logfetcher = LogFetcher()
+logfetcher.start()

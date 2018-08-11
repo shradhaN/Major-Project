@@ -1,31 +1,58 @@
 if ($('#three_algo_line').length) {
+    
+    var length = document.getElementById('date_list_length').value;
+    var un_length = document.getElementById('date_list_length_un').value;
+    
+
+    count_number=[]
+    date_array=[]
+    for (i =1; i<=length; i++) {
+        date = document.getElementById('date'+i+'').value;
+        date_array.push(date)       
+        count = parseInt(document.getElementById('d_count'+i+'').value);
+        count_number.push(count)
+        }
+
+    count_unsus=[]
+    date_unsus=[]
+
+    for (i =1; i<=un_length; i++) {
+        date = document.getElementById('date_un'+i+'').value;
+        date_unsus.push(date)       
+        count = parseInt(document.getElementById('d_count_un'+i+'').value);
+        count_unsus.push(count)
+        }
+
+    console.log()
+
+    
         var ctx = document.getElementById("three_algo_line");
         var lineChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+                labels: date_array,
                 datasets: [{
                     label: "Suspicious",
-                    backgroundColor: "rgba(38, 185, 154, 0.31)",
-                    borderColor: "rgba(38, 185, 154, 0.7)",
-                    pointBorderColor: "rgba(38, 185, 154, 0.7)",
-                    pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
+                    backgroundColor: "rgba(255,0,0, 0.31)",
+                    borderColor: "rgba(255,0,0, 0.7)",
+                    pointBorderColor: "rgba(255,0,0, 0.7)",
+                    pointBackgroundColor: "rgba(255,0,0, 0.7)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
-                    data:[ 6,3,4,document.getElementById("suspicious").value]
-                }/*,
+                    data:count_number
+                },
       {
                     label: "Unsuspicious",
-                    backgroundColor: "rgba(3, 88, 106, 0.3)",
+                    backgroundColor: "rgba(3, 88, 106, 0.31)",
                     borderColor: "rgba(3, 88, 106, 0.70)",
                     pointBorderColor: "rgba(3, 88, 106, 0.70)",
                     pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(151,187,205,1)",
                     pointBorderWidth: 1,
-                    data: [ 546, 532,578,document.getElementById("unsuspicious").value]
-                }*/]
+                    data:count_unsus
+                }]
             },
         });
     }

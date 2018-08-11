@@ -11,6 +11,7 @@ from app.models import *
 from app.models import Parameters
 from app.preprocessin import *
 from collections import Counter
+import threading
 
 
 
@@ -41,14 +42,25 @@ def homepage(request):
     naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]    
         
     #knnfunc()
-    #preprocess_log()
-    
+    #predict after preprocessing and store in database
+    latest_pred_id = data_set_normalized.objects.all()
+    last_pred_id= len(latest_pred_id)
+    if latest_pred_id == None:
+        last_pred_id = 0
+    #preprocess_log(last_pred_id)   
 
     #get values to display in database
-    count_suspicious = len(classified_data.objects.filter(category=1))
-    count_total_records = len(classified_data.objects.all())
-    count_unsuspicious = len(classified_data.objects.filter(category=0))
+    count_suspicious = classified_data.objects.filter(category=1).count()
+    count_total_records = classified_data.objects.all().count()
+    count_unsuspicious = classified_data.objects.filter(category=0).count()
+    if count_total_records ==0:
+        suspicious_percentage = 0
+        unsuspicious_percentage = 0
+    else:
+        suspicious_percentage = (count_suspicious/count_total_records)*100
+        unsuspicious_percentage = (count_unsuspicious/count_total_records)*100
 
+    #for suspiciious
     suspicious_records = classified_data.objects.filter(category=1)
     date_list = []
     for suspicious in suspicious_records:
@@ -61,6 +73,19 @@ def homepage(request):
         date_unique.append(count)
         count_date.append(count_sus[count])
 
+    #for unsuspicious
+    unsuspicious_records = classified_data.objects.filter(category=0)
+    unsuspicious_date_list=[]
+    for unsuspicious in unsuspicious_records:
+        unsuspicious_date_list.append(unsuspicious.data_set.date)
+    count_unsus = Counter(unsuspicious_date_list)
+    date_unique_un=[]
+    count_unique_un=[]
+    for count in count_unsus:
+        date_unique_un.append(count)
+        count_unique_un.append(count_unsus[count])
+
+
 
     context = {"svm" : svm,
         "knn" : knn,
@@ -69,7 +94,11 @@ def homepage(request):
         'total':count_total_records,
         'unsuspicious':count_unsuspicious,
         'date_unique':date_unique,
-        'count_date':count_date}
+        'count_date':count_date,
+        "date_unique_unsus":date_unique_un,
+        "count_unique_un":count_unique_un,
+        'sus_percent':suspicious_percentage,
+        "unsus_percent":unsuspicious_percentage}
 
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))
@@ -139,7 +168,8 @@ def showimage(request):
     return HttpResponse(buffer.getvalue(), content_type="image/png")
 
 
-def preprocess_log():
+def preprocess_log(last_pred_id):
+    #threading.Timer(420, preprocess_log).start()
     latest_id = data_set.objects.all()
     last_id= len(latest_id)
     if latest_id == None:
@@ -151,14 +181,10 @@ def preprocess_log():
     convert_to_csv(file_add, last_id)
     print("converted")
 
-    #predict after preprocessing and store in database
-    latest_pred_id = data_set_normalized.objects.all()
-    last_pred_id= len(latest_pred_id)
-    if latest_pred_id == None:
-        last_pred_id = 0
     #get the values from database and use prediction
     cnx = sqlite3.connect("./db.sqlite3")
     df = pd.read_sql("SELECT * FROM app_data_set_normalized WHERE id > (?)",params=(last_pred_id,), con=cnx)
+    #df = pd.read_sql("SELECT * FROM app_data_set_normalized", con=cnx)
     X = np.array(df.drop(["id","data_set_id"],1))
     y = np.array(len(X))  
 
@@ -175,5 +201,8 @@ def preprocess_log():
     #add new prediction into the database
     df_pred.to_sql(name="app_classified_data",if_exists = "append", con =cnx, index=False)
     print("predicted")
+
+
+
 
 
