@@ -5,83 +5,52 @@ if ($("#chart_plot").length) {
     console.log('Plot1 - testing...');
 
     var stuff = $("#chart_plot").data('stuff');
-    var length = document.getElementById('date_list_length');
+    var length = document.getElementById('date_list_length').value;
+    console.log(length);
     var data_set=[];
     for (i =1; i<=length; i++) {
-        date = document.getElementById('date'+i+'');
-        count = document.getElementById('d_count'+I+'');
+        date = document.getElementById('date'+i+'').value;
+        console.log(date);
+        count = document.getElementById('d_count'+i+'').value;
+        console.log(count);
         data_set.push([date,count]);
-        concole.log(data_set)
-    }
-    // alert(stuff);
-    var chart_plot_02_settings = {
-        grid: {
-            show: true,
-            aboveData: true,
-            color: "#3f3f3f",
-            labelMargin: 10,
-            axisMargin: 0,
-            borderWidth: 0,
-            borderColor: null,
-            minBorderMargin: 5,
-            clickable: true,
-            hoverable: true,
-            autoHighlight: true,
-            mouseActiveRadius: 100
-        },
+        }
+    console.log("is this here")
+    console.log(data_set)
+
+       // console.log()
+    var chart_plot_03_settings = {
         series: {
-            lines: {
-                show: true,
-                fill: true,
-                lineWidth: 2,
-                steps: false
-            },
-            points: {
-                show: true,
-                radius: 4.5,
-                symbol: "circle",
-                lineWidth: 3.0
+            curvedLines: {
+                apply: true,
+                active: true,
+                monotonicFit: true
             }
         },
-        legend: {
-            position: "ne",
-            margin: [0, -25],
-            noColumns: 0,
-            labelBoxBorderColor: null,
-            labelFormatter: function(label, series) {
-                return label + '&nbsp;&nbsp;';
+        colors: ["#26B99A"],
+        grid: {
+            borderWidth: {
+                top: 0,
+                right: 0,
+                bottom: 1,
+                left: 1
             },
-            width: 40,
-            height: 1
-        },
-        colors: ['#96CA59', '#3F97EB', '#72c380', '#6f7a8a', '#f7cb38', '#5a8022', '#2c7282'],
-        shadowSize: 0,
-        tooltip: true,
-        tooltipOpts: {
-            content: "%s: %y.0",
-            xDateFormat: "%d/%m",
-            shifts: {
-                x: -30,
-                y: -50
-            },
-            defaultTheme: false
-        },
-        yaxis: {
-            min: 0
-        },
-        xaxis: {
-            mode: "time",
-            minTickSize: [1, "day"],
-            timeformat: "%d/%m/%y",
-            min: data_set[''][0],
-            max: data_set[3][0]
+            borderColor: {
+                bottom: "#7F8790",
+                left: "#7F8790"
+            }
         }
     };
 
-
-    // console.log()
-    
-
-    $.plot($("#chart_plot"), [data_set], chart_plot_02_settings);
+    $.plot($("#chart_plot"), [{
+            label: "Registrations",
+            data: data_set,
+            lines: {
+                fillColor: "rgba(150, 202, 89, 0.12)"
+            },
+            points: {
+                fillColor: "#fff"
+            }
+        }], chart_plot_03_settings);
 };
 
