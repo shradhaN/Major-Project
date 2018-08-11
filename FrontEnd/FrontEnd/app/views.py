@@ -10,6 +10,7 @@ from app.Linear_Discriminant import linearfunc
 from app.models import *
 from app.models import Parameters
 from app.preprocessin import *
+from collections import Counter
 
 
 
@@ -37,14 +38,10 @@ def homepage(request):
     linearfunc()
     svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
     knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
-    naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]
-    
-    
+    naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]    
         
     #knnfunc()
-    preprocess_log()
-    
-    
+    #preprocess_log()
     
 
     #get values to display in database
@@ -52,12 +49,27 @@ def homepage(request):
     count_total_records = len(classified_data.objects.all())
     count_unsuspicious = len(classified_data.objects.filter(category=0))
 
+    suspicious_records = classified_data.objects.filter(category=1)
+    date_list = []
+    for suspicious in suspicious_records:
+        date_list.append(suspicious.data_set.date)
+    count_sus = Counter(date_list)
+
+    date_unique=[]
+    count_date=[]
+    for count in count_sus:
+        date_unique.append(count)
+        count_date.append(count_sus[count])
+
+
     context = {"svm" : svm,
         "knn" : knn,
         "naive": naive,
         'suspicious':count_suspicious,
         'total':count_total_records,
-        'unsuspicious':count_unsuspicious,}
+        'unsuspicious':count_unsuspicious,
+        'date_unique':date_unique,
+        'count_date':count_date}
 
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))

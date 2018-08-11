@@ -27,7 +27,7 @@ class data_set(models.Model):
 
 class classified_data(models.Model):
 	category =  models.FloatField()
-	data_set = models.OneToOneField(data_set, on_delete = models.CASCADE)
+	data_set = models.ForeignKey(data_set, on_delete = models.CASCADE)
 
 class data_set_normalized(models.Model):
  	action_normal = models.FloatField()
