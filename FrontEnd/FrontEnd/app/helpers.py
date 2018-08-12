@@ -42,19 +42,23 @@ class LogFetcher(threading.Thread):
 		cnx = sqlite3.connect("./db.sqlite3")
 		df = pd.read_sql("SELECT * FROM app_data_set_normalized WHERE id > (?)",params=(last_pred_id,), con=cnx)
 		#df = pd.read_sql("SELECT * FROM app_data_set_normalized", con=cnx)
-		X = np.array(df.drop(["id","data_set_id"],1))
-		y = np.array(len(X))  
 
-		#predict the values
-		y_pred = knn_predict(X)    
-		#save predicted values into a new database
-		print(y_pred)
-		df_pred = pd.DataFrame(y_pred)
-		df_pred["data_set_id"]=df["data_set_id"]
-		df_pred.columns=["category", "data_set_id"]
-		#delete the previous database
-		#predicted_values = classified_data.objects.all()
-		#predicted_values.delete()
-		#add new prediction into the database
-		df_pred.to_sql(name="app_classified_data",if_exists = "append", con =cnx, index=False)
-		print("predicted")
+		if len(df)==0:
+			print("no new entries")
+		else:	
+			X = np.array(df.drop(["id","data_set_id"],1))
+			y = np.array(len(X))  
+
+			#predict the values
+			y_pred = knn_predict(X)    
+			#save predicted values into a new database
+			print(y_pred)
+			df_pred = pd.DataFrame(y_pred)
+			df_pred["data_set_id"]=df["data_set_id"]
+			df_pred.columns=["category", "data_set_id"]
+			#delete the previous database
+			#predicted_values = classified_data.objects.all()
+			#predicted_values.delete()
+			#add new prediction into the database
+			df_pred.to_sql(name="app_classified_data",if_exists = "append", con =cnx, index=False)
+			print("predicted")

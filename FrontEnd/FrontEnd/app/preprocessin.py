@@ -81,7 +81,7 @@ def standardize():
     # print(df2.dtypes) 
     
 
-    print(df)
+    #print(df)
     #drop the column if any value is missing
     #df= df.dropna(axis= "columns", how = "all", inplace=True)
     #drop unnecessary files
@@ -89,7 +89,7 @@ def standardize():
     #df.drop_duplicates(keep="first", inplace=True)
 
     print("dropped")
-    print(df2)
+    #print(df2)
 
     df['dst_port'] = df['dst_port'].replace('-', -99999)
     df['dst_port'] = df['dst_port'].apply(pd.to_numeric)
@@ -108,8 +108,8 @@ def standardize():
     df['path'] = df['path'].apply(pd.to_numeric)
 
     print("middle**************")
-    print(df.dtypes)
-    print(df2.dtypes)
+    #print(df.dtypes)
+    #print(df2.dtypes)
     df2['action'] = df2['action'].apply(pd.to_numeric)
     df2['protocol'] = df2['protocol'].apply(pd.to_numeric)
 
@@ -151,14 +151,14 @@ def standardize():
     df['dst_ip']=df['dst_ip'].replace('-','0.0.0.0')
     print("protocol done")
     print("lats")
-    print(df.dtypes)
-    print(df2.dtypes)
+    #print(df.dtypes)
+    #print(df2.dtypes)
     
         
     try:
         df_all = df.merge(df2.drop_duplicates(),on=['date','time','action','protocol','src_ip','dst_ip','src_port','dst_port','path'], 
                        how='left', indicator=True)
-        print(df_all)
+        #print(df_all)
         df3 =df_all[df_all._merge != 'both']
         print(len(df3))
         #check and find the risk factors first
@@ -171,7 +171,7 @@ def standardize():
             #df.to_sql(name="app_data_set", con = cnx, if_exists = "append", index=False)
         else:
             df3.dropna(inplace=True)
-            print(df3)
+            #print(df3)
             #df.to_csv("firewall_standard.csv", index=False)
             df3.drop(["_merge"], axis=1, inplace=True)
             df3.to_sql(name="app_data_set", con = cnx, if_exists = "append", index=False)
