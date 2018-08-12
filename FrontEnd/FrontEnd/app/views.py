@@ -6,7 +6,7 @@ from django.db.models import *
 from app.models import *
 from app.knn import knnfunc, knn_predict
 from app.logistic_regression import logisticfunc
-from app.Linear_Discriminant import linearfunc
+
 from app.models import *
 from app.models import Parameters
 from app.preprocessin import *
@@ -36,7 +36,7 @@ def index(request):
 def homepage(request):    
     knnfunc()
     logisticfunc()
-    linearfunc()
+    
     svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
     knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
     naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]    
@@ -86,6 +86,26 @@ def homepage(request):
         count_unique_un.append(count_unsus[count])
 
 
+    #action and protocols
+    udp_count = data_set.objects.filter(protocol=0).count()
+    tcp_count = data_set.objects.filter(protocol=1).count()
+    icmp_count=data_set.objects.filter(protocol=2).count()
+    unknown_count = data_set.objects.filter(protocol=-99999).count()
+    total_protocol = udp_count+tcp_count+icmp_count+unknown_count
+
+    if total_protocol == 0:
+        udp_percent=0
+        tcp_percent=0
+        unknown_percent=0
+        icmp_percent=0
+    else:
+        udp_percent=(udp_count/total_protocol)*100
+        tcp_percent=(tcp_count/total_protocol)*100
+        icmp_percent=(icmp_count/total_protocol)*100
+        unknown_percent=(unknown_count/total_protocol)*100
+
+
+
 
     context = {"svm" : svm,
         "knn" : knn,
@@ -98,7 +118,11 @@ def homepage(request):
         "date_unique_unsus":date_unique_un,
         "count_unique_un":count_unique_un,
         'sus_percent':suspicious_percentage,
-        "unsus_percent":unsuspicious_percentage}
+        "unsus_percent":unsuspicious_percentage,
+        'udp_percent':udp_percent,
+        "tcp_percent":tcp_percent,
+        "icmp_percent":icmp_percent,
+        "unknown_percent":unknown_percent}
 
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))

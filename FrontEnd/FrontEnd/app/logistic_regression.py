@@ -21,7 +21,7 @@ def logisticfunc():
 	plt.rc("font", size=14)
 	sns.set(style="white")
 	sns.set(style="whitegrid", color_codes=True)
-	df = pd.read_csv("/home/suravi/Major-Project/ExampleSets/newly_truncated_value2.csv")
+	df = pd.read_csv("C:/Users/Dell/Documents/GitHub/Major-Project/ExampleSets/newly_truncated_value2.csv")
 	df.head()
 	X = np.array(df.drop(['5','6','7'],1))
 	y = np.array(df['7'])

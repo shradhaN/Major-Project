@@ -21,7 +21,7 @@ from app.models import Parameters
 def knnfunc():
 
 	plt.style.use('ggplot')
-	df = pd.read_csv("/home/shradha/virtualenvironment/ML/bin/Major project/ExampleSets/Firewall_final_normalized.csv")
+	df = pd.read_csv("C:/Users/Dell/Documents/GitHub/Major-Project/ExampleSets/Firewall_final_normalized.csv")
 
 	df.head()
 	df.shape

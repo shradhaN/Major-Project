@@ -40,12 +40,9 @@
 import numpy as np
 import pandas as pd
 import csv
-
-import socket, struct # convert ip to num
-from binascii import hexlify # convert ip to num
-
-from sklearn import preprocessing #for normalization
-
+import socket, struct
+from binascii import hexlify
+from sklearn import preprocessing
 import sqlite3
 from pandas.io import sql
 from app.models import * #access to the created db
@@ -53,7 +50,6 @@ from django.db import IntegrityError
 
 
 # Create your connection.
-
 def ConvertIptoNum(ip):
     try:
         #IPV4
@@ -67,6 +63,7 @@ def standardize():
     cnx = sqlite3.connect("./db.sqlite3")      
     #read the csv file        
     df = pd.read_csv('firewall2.csv', dtype=object )
+
     #drop unnecessary files
     df.drop(['tcpflags','size','tcpsyn','tcpack','tcpwin','icmptype','icmpcode','info'], axis =1, inplace = True)
     df2=pd.read_sql("SELECT * FROM app_data_set",con=cnx)
