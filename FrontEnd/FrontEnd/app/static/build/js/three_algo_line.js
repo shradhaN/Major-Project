@@ -25,12 +25,18 @@ if ($('#three_algo_line').length) {
 
     console.log()
 
+    /*if date_unsus.length>date_array.length{
+        date=date_unsus;
+    }
+    else:
+        date=date_array;*/
+
     
         var ctx = document.getElementById("three_algo_line");
         var lineChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: date_array,
+                labels: date_unsus,
                 datasets: [{
                     label: "Suspicious",
                     backgroundColor: "rgba(255,0,0, 0.31)",

@@ -181,6 +181,37 @@
           </div>
         </div>
 
+        <!--Protocols in dataset -->
+         <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="x_panel">
+            <div class="x_title">
+              <h2>Percentage of Protocols Used</h2>
+              <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                  <ul class="dropdown-menu" role="menu">
+                  </ul>
+                </li>
+                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+              <canvas id="protocol_percent"></canvas>
+              <input type ="hidden" id="udp" value="{{udp_percent}}">
+              <input type ="hidden" id="tcp" value="{{tcp_percent}}">
+              <input type="hidden" id="icmp" value="{{icmp_percent}}">
+              <input type="hidden" id="unknown_protocol" value="{{unknown_percent}}">
+            </div>
+
+          </div>
+        </div>
+
+
+
  <!-- Line graph-->
   </div>
 </div>
@@ -213,5 +244,6 @@
     <script src="/static/build/js/date_range.js"></script>
     <script src="/static/build/js/line2.js"></script>
     <script src="/static/build/js/percentage.js"></script>
+    <script src="/static/build/js/protocol_percent.js"></script>
 
 {% endblock javascripts %}
