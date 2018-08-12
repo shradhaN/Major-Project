@@ -3,10 +3,6 @@ from app import views
 from app.helpers import LogFetcher 
 
 urlpatterns = [
-    # Matches any html file - to be used for gentella
-    # Avoid using your .html in your resources.
-    # Or create a separate django app.
-    # url(r'^.*\.html', views.gentella_html, name='gentella'),
 
     # The home page
     url(r'^$', views.homepage, name='homepage'),
@@ -16,5 +12,7 @@ urlpatterns = [
     url(r'^three_algo/$', views.three_algo, name='three_algo'),
 
 ]
+# Log fetcher is the  function in helpers.py that pulls the firewall logs 
 logfetcher = LogFetcher()
+#threading started
 logfetcher.start()
