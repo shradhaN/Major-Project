@@ -18,10 +18,10 @@ from app.models import *
 
 
 #svmknn
-def knnfunc():
+def knnnewfunc():
 
 	plt.style.use('ggplot')
-	df = pd.read_csv("C:/Users/Dell/Documents/GitHub/Major-Project/ExampleSets/newly_truncated_value.csv")
+	df = pd.read_csv("C:/Users/Dell/Documents/GitHub/Major-Project/ExampleSets/Firewall_final_normalized.csv")
 
 	df.head()
 	df.shape
@@ -49,7 +49,7 @@ def knnfunc():
 	knn = KNeighborsClassifier(n_neighbors=2)
 	#Fit the model
 	knn.fit(X_train,y_train)
-	filename = "knn-suravi_train.sav"
+	filename = "knn-suravi.sav"
 	pickle.dump(knn, open(filename,'wb'))
 	loaded_model = pickle.load(open(filename,'rb'))
 	accuracy = loaded_model.score(X_test, y_test)
@@ -64,7 +64,7 @@ def knnfunc():
 	tn =a[1][1]
 	fp = a[0][1]
 	fn = a[1][0]
-	name = "knn"
+	name = "knn_train"
 
 	lengthofy = list(y_test)
 	positive = lengthofy.count(0)
@@ -96,6 +96,6 @@ def knnfunc():
 	roc_auc_score(y_test,y_pred_proba)
 
 
-def predict(x):
-	loaded_model = pickle.load(open("knn-suravi_train.sav",'rb'))
+def knn_predict(x):
+	loaded_model = pickle.load(open("knn-suravi.sav",'rb'))
 	return loaded_model.predict(x)

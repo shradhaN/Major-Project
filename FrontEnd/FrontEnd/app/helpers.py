@@ -1,7 +1,7 @@
 import threading
 from app.models import *
 from app.preprocessin import *
-from app.knn import knn_predict
+from app.knn_new import knn_predict
 import time
 
 

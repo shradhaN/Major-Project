@@ -4,7 +4,8 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect, HttpResponseRedirect, reverse,render_to_response,get_object_or_404
 from django.db.models import *
 from app.models import *
-from app.knn import knnfunc, knn_predict
+from app.knn import knnfunc, predict
+from app.knn_new import knnnewfunc, knn_predict
 from app.logistic_regression import logisticfunc
 
 from app.models import *
@@ -34,9 +35,9 @@ def index(request):
 
 
 def homepage(request): 
-    #Parameters.objects.all().delete()   
-    #knnfunc()
-    #logisticfunc()
+    Parameters.objects.all().delete()   
+    knnfunc()
+    logisticfunc()
     
     svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
     knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
@@ -62,7 +63,39 @@ def homepage(request):
     #for suspiciious
     suspicious_records = classified_data.objects.filter(category=1)
     date_list = []
+    stcp=0
+    sudp=0
+    sicmp=0
+    ssend=0
+    sreceive=0
+    saction=0
+    sallow=0
+    sdeny=0
+    spath=0
     for suspicious in suspicious_records:
+        #protocol
+        if suspicious.data_set.protocol == "0":
+            sudp=sudp+1
+        if suspicious.data_set.protocol == "1":
+            stcp=stcp+1
+        if suspicious.data_set.protocol == "2":
+            sicmp=sicmp+1
+
+        #action
+        if suspicious.data_set.action == "0":
+            sallow=sallow+1
+        if suspicious.data_set.action == "1":
+            sdeny=sdeny+1
+        if suspicious.data_set.action == "-9999":
+            saction=saction+1
+
+        #path
+        if suspicious.data_set.path == 0:
+            sreceive=sreceive+1
+        if suspicious.data_set.path == 1:
+            ssend=ssend+1
+        if suspicious.data_set.path == -9999:
+            spath=spath+1
         date_list.append(suspicious.data_set.date)
     count_sus = Counter(date_list)
 
@@ -121,7 +154,17 @@ def homepage(request):
         'udp_percent':udp_percent,
         "tcp_percent":tcp_percent,
         "icmp_percent":icmp_percent,
-        "unknown_percent":unknown_percent}
+        "unknown_percent":unknown_percent,
+        "stcp" : stcp,
+        "sudp" : sudp,
+        "sicmp" : sicmp,
+        "ssend" : ssend,
+        "sreceive" :sreceive, 
+        "saction" : saction,
+        "sallow" : sallow,
+        "sdeny" : sdeny,
+        "spath" : spath
+        }
 
     template = loader.get_template('app/major/homepage.html')
     return HttpResponse(template.render(context, request))

@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import roc_auc_score
 from app.models import Parameters
 def linearfunc():
-	df = pd.read_csv("C:/Users/Dell/Documents/GitHub/Major-Project/ExampleSets/newly_truncated_value2.csv")
+	df = pd.read_csv("C:/Users/Dell/Documents/GitHub/Major-Project/ExampleSets/newly_truncated_value.csv")
 	df.head()
 	X = np.array(df.drop(['5','6','7'],1))
 	y = np.array(df['7'])
