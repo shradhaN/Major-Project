@@ -13,6 +13,10 @@ class Parameters(models.Model):
 	miss = models.FloatField()
 	fallout = models.FloatField()
 	f1score = models.FloatField()
+	tp= models.FloatField(null = True)
+	fp= models.FloatField(null = True)
+	tn= models.FloatField(null = True)
+	fn= models.FloatField(null = True)
 
 class data_set(models.Model):
 	date = models.CharField(max_length = 50)
@@ -37,5 +41,8 @@ class data_set_normalized(models.Model):
  	path_normal = models.FloatField()
  	data_set = models.OneToOneField(data_set, on_delete=models.CASCADE)
  	
+class actual_value(models.Model):
+	positive= models.FloatField(null = True)
+	negative= models.FloatField(null = True)
 
 

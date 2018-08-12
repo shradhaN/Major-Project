@@ -33,14 +33,13 @@ def index(request):
 #     return HttpResponse(template.render(context, request))
 
 
-def homepage(request):    
-    knnfunc()
-    logisticfunc()
+def homepage(request): 
+    #Parameters.objects.all().delete()   
+    #knnfunc()
+    #logisticfunc()
     
     svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
     knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
-    naive = Parameters.objects.filter(algorithm_name = "naive").select_related()[0]    
-        
     #knnfunc()
     #predict after preprocessing and store in database
     latest_pred_id = data_set_normalized.objects.all()
@@ -109,7 +108,7 @@ def homepage(request):
 
     context = {"svm" : svm,
         "knn" : knn,
-        "naive": naive,
+      
         'suspicious':count_suspicious,
         'total':count_total_records,
         'unsuspicious':count_unsuspicious,
@@ -133,8 +132,10 @@ def svm_knn(request):
    
     svm = Parameters.objects.filter(algorithm_name = "svm").select_related()[0]
     knn = Parameters.objects.filter(algorithm_name = "knn").select_related()[0]
+    actual = actual_value.objects.all()[0]
     context = {'svm': svm,
-        'knn':knn
+        'knn':knn,
+        'actual':actual
         }
     template = loader.get_template('app/major/svm_knn.html')
     return HttpResponse(template.render(context, request))

@@ -13,7 +13,7 @@ from sklearn.metrics import roc_curve
 from sklearn.metrics import roc_auc_score
 #import GridSearchCV
 from sklearn.model_selection import GridSearchCV
-from app.models import Parameters
+from app.models import *
 
 
 
@@ -21,7 +21,7 @@ from app.models import Parameters
 def knnfunc():
 
 	plt.style.use('ggplot')
-	df = pd.read_csv("C:/Users/Dell/Documents/GitHub/Major-Project/ExampleSets/Firewall_final_normalized.csv")
+	df = pd.read_csv("/home/suravi/Major-Project/ExampleSets/Firewall_final_normalized.csv")
 
 	df.head()
 	df.shape
@@ -65,6 +65,14 @@ def knnfunc():
 	fp = a[0][1]
 	fn = a[1][0]
 	name = "knn"
+
+	lengthofy = list(y_test)
+	positive = lengthofy.count(0)
+	negative = lengthofy.count(1)
+
+	q = actual_value(positive = positive, negative = negative)
+	q.save()
+
 	precision =  (tp)/(tp+fp)#positive prediction value
 	precision = round(precision*100,2)
 	accuracy = (tp+ tn)/(tp+tn+fp+fn)
@@ -78,7 +86,7 @@ def knnfunc():
 	fallout = fp/(fn+tp)#false positive rate
 	fallout = round(fallout *100,2)
 	f1score = round(2*(hit*precision)/(hit+precision),2)#if you have an uneven class distribution. 
-	z = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
+	z = Parameters(tp = tp, tn = tn, fp = fp, fn = fn, algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
 	z.save()
 	pd.crosstab(y_test, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
 	print(classification_report(y_test,y_pred))

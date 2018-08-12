@@ -7,46 +7,10 @@
  
  <div class="right_col" role="main">
     <div class="">
-      <!-- Line graph-->
-<!--  <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="x_panel">
-            <div class="x_title">
-              <h2>Line Graph</h2>
-              <ul class="nav navbar-right panel_toolbox">
-                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                  <ul class="dropdown-menu" role="menu">
-                  </ul>
-                </li>
-                <li><a class="close-link"><i class="fa fa-close"></i></a>
-                </li>
-              </ul>
-              <div class="clearfix"></div>
-            </div>
-            <div class="x_content">
-              <canvas id="svm_knn_line"></canvas>
-              <input type="hidden" id="svm_p" value="{{svm.precision}}">
-              <input type="hidden" id="knn_p" value="{{knn.precision}}">
-             <input type="hidden" id="svm_a" value="{{svm.accuracy}}">
-              <input type="hidden" id="knn_a" value="{{knn.accuracy}}">
-                    <input type="hidden" id="svm_h" value="{{svm.hit}}">
-              <input type="hidden" id="knn_h" value="{{knn.hit}}">
-               <input type="hidden" id="svm_m" value="{{svm.miss}}">
-              <input type="hidden" id="knn_m" value="{{knn.miss}}">
-                    <input type="hidden" id="svm_t" value="{{svm.tnr}}">
-              <input type="hidden" id="knn_t" value="{{knn.tnr}}">
-                    <input type="hidden" id="svm_f" value="{{svm.fallout}}">
-              <input type="hidden" id="knn_f" value="{{knn.fallout}}">
-                    <input type="hidden" id="svm_s" value="{{svm.f1score}}">
-              <input type="hidden" id="knn_s" value="{{knn.f1score}}">
-            </div>
-          </div>
-        </div> -->
- <!-- Line graph-->
+      <div class ="row">
+
      <!--Bar graph Js-->
-        <div class="col-md-8 col-sm-8 col-xs-8">
+        <div class="col-md-3 col-sm-3 col-xs-3" style=" width: 100%">
           <div class="x_panel">
             <div class="x_title">
               <h2> Bar Chart </h2>
@@ -81,37 +45,129 @@
             </div>
           </div>
         </div>
+      </div>
    
  <!-- Bar Graph End-->
-  
-  <!-- piechart-->
- <!-- <div class="col-md-6 col-sm-6 col-xs-12">
+ <div class ="row"> 
+<!-- donut start -->
+      <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="x_panel">
             <div class="x_title">
-              <h2>Pie Graph Chart </h2>
+              <h2>KNN </h2>
+               <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                
+                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+              </ul>
+                        <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+              <canvas id="knnDonut"></canvas>
+              <input type="hidden" id="tpk" value="{{knn.tp}}">
+              <input type="hidden" id="tnk" value="{{knn.tn}}">
+              <input type="hidden" id="fpk" value="{{knn.fp}}">
+              <input type="hidden" id="fnk" value="{{knn.fn}}">
+               <td>
+                  <table class="tile_info">
+                
+                    <tr>
+                      <td>
+                        <p><i class="fa fa-square green"></i> True Positive </p>
+                        <p><i class="fa fa-square red"></i>True Negative </p>
+                        <p><i class="fa fa-square purple"></i>False Negative </p>
+                        <p><i class="fa fa-square aero"></i>False Positive </p>
+                      </td>
+                  
+                    </tr>
+                  </table>
+                </td>
+            </div>
+          </div>
+        </div>
+       <!--  donutend -->
+         <!-- donutchart-->
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="x_panel">
+            <div class="x_title">
+              <h2>Actual</h2>
               <ul class="nav navbar-right panel_toolbox">
                 <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Settings 1</a>
-                    </li>
-                    <li><a href="#">Settings 2</a>
-                    </li>
-                  </ul>
-                </li>
+                
                 <li><a class="close-link"><i class="fa fa-close"></i></a>
                 </li>
               </ul>
               <div class="clearfix"></div>
             </div>
             <div class="x_content">
-              <canvas id="svm_knn_pie"></canvas>
+              <canvas id="actualDonut"></canvas>
+              <input type="hidden" id="ap" value="{{actual.positive}}">
+              <input type="hidden" id="an" value="{{actual.negative}}">
+                      <td>
+                  <table class="tile_info">
+                
+                    <tr>
+                      <td>
+                        <p><i class="fa fa-square green"></i>Positive </p>
+                      
+                        <p><i class="fa fa-square red"></i>Negative </p>
+                                
+                      </td>
+
+                  
+                    </tr>
+            
+                  </table>
+                </td>
             </div>
           </div>
-        </div> -->
-<!-- piechart end-->
+        </div>
+<!-- donutchart end-->
+  <!-- donutchart-->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="x_panel">
+            <div class="x_title">
+              <h2>Logistic Regression </h2>
+               <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+                
+                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                </li>
+              </ul>
+                        <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+              <canvas id="logisticDonut"></canvas>
+              <input type="hidden" id="tpl" value="{{svm.tp}}">
+              <input type="hidden" id="tnl" value="{{svm.tn}}">
+              <input type="hidden" id="fpl" value="{{svm.fp}}">
+              <input type="hidden" id="fnl" value="{{svm.fn}}">
+              <td>
+                  <table class="tile_info">
+                
+                    <tr>
+                      <td>
+                        <p><i class="fa fa-square green"></i> True Positive </p>
+                        <p><i class="fa fa-square red"></i>True Negative </p>
+                        <p><i class="fa fa-square purple"></i>False Negative </p>
+                        <p><i class="fa fa-square aero"></i>False Positive </p>
+                      </td>
+                  
+                    </tr>
+                  </table>
+                </td>
+            </div>
+          </div>
+        </div>
+<!-- donutchart end-->
+</div>
+
+
+
  <!--Matplotlib-->
         <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="x_panel">
@@ -142,4 +198,7 @@
     <script src="/static/build/js/svm_knn_bar.js"></script>
     <script src="/static/build/js/svm_knn_line.js"></script>
     <script src="/static/build/js/svm_knn_pie.js"></script>
+    <script src="/static/build/js/donut_knn.js"></script>
+    <script src="/static/build/js/donut_actual.js"></script>
+    <script src="/static/build/js/donut_logistic.js"></script>
 {% endblock javascripts %}

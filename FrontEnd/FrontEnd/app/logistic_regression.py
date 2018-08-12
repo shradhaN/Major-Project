@@ -21,7 +21,7 @@ def logisticfunc():
 	plt.rc("font", size=14)
 	sns.set(style="white")
 	sns.set(style="whitegrid", color_codes=True)
-	df = pd.read_csv("C:/Users/Dell/Documents/GitHub/Major-Project/ExampleSets/newly_truncated_value2.csv")
+	df = pd.read_csv("/home/suravi/Major-Project/ExampleSets/newly_truncated_value2.csv")
 	df.head()
 	X = np.array(df.drop(['5','6','7'],1))
 	y = np.array(df['7'])
@@ -46,6 +46,7 @@ def logisticfunc():
 	fp = a[0][1]
 	fn = a[1][0]
 	name = "svm"
+
 	precision =  (tp)/(tp+fp)#positive prediction value
 	precision = round(precision*100,2)
 	accuracy = (tp+ tn)/(tp+tn+fp+fn)
@@ -59,7 +60,7 @@ def logisticfunc():
 	fallout = fp/(fn+tp)#false positive rate
 	fallout = round(fallout *100,2)
 	f1score = round(2*(hit*precision)/(hit+precision),2)#if you have an uneven class distribution. 
-	z = Parameters(algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
+	z = Parameters(tp = tp, tn = tn, fp = fp, fn = fn, algorithm_name = name, precision = precision, accuracy = accuracy, hit = hit, tnr = tnr, miss = miss, fallout = fallout, f1score= f1score)
 	z.save()
 	pd.crosstab(y_test, y_pred, rownames=['True'], colnames=['Predicted'], margins=True)
 	#Compute precision, recall, F-measure and support
