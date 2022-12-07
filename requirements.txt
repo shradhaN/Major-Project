@@ -5,7 +5,7 @@ BeautifulSoup==3.2.1
 beautifulsoup4==4.6.0
 bleach==2.1.2
 bs4==0.0.1
-certifi==2017.11.5
+certifi==2022.12.7
 chardet==3.0.4
 colorlover==0.2.1
 configparser==3.5.0
